@@ -11,7 +11,19 @@ export default {
         "upsel-white": "#ffffff",
         "upsel-light-grey": "#D9D9D9",
         "upsel-grey": "#E6E6E6",
+        "upsel-footer-grey": "#EBE9F1",
       },
+      keyframes:{
+        scrollLeft:{
+          '0%': {
+          transform: 'translateX(0%)'},
+          '100%' :{
+          transform: 'translateX(-50%)'},
+        }
+      },
+      animation:{
+        scrollLeft:'scrollLeft 20s linear infinite',
+      }
     },
     fontFamily: {
       custom: ["DM Sans", "sans-serif"],
