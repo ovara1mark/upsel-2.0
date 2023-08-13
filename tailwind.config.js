@@ -17,5 +17,5 @@ export default {
       custom: ["DM Sans", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
