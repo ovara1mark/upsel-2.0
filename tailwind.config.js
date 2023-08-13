@@ -12,6 +12,20 @@ export default {
         "upsel-light-grey": "#D9D9D9",
         "upsel-grey": "#E6E6E6",
       },
+      animation: {
+        marquee: "marquee 15s linear infinite",
+        marquee2: "marquee2 15s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
     },
     fontFamily: {
       custom: ["DM Sans", "sans-serif"],

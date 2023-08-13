@@ -9,3 +9,11 @@
     opacity: 1;
   }
 } */
+
+.banner {
+  background: rgba(255, 255, 255, 0.65);
+}
+.banner-two {
+  border-left: 1px dashed black;
+  border-right: 1px dashed black;
+}
