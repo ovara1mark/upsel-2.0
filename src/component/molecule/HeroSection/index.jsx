@@ -59,7 +59,7 @@ export const HeroSection = () => {
 
   return (
     <>
-      <section className="bg-upsel-black lg:py-[2.5rem] md:py-[0.75rem]">
+      <section className="bg-upsel-black lg:py-[2.5rem] md:py-[0.75rem] hero-section relative overflow-hidden">
         <div className="lg:px-[5rem] lg:pt-[1.5rem] lg:pb-[1.25rem] md:py:-[3rem] md:px-[2.5rem] py-[1.25rem] px-[1.5rem] bg-upsel-black flex flex-col-reverse md:flex md:flex-row md:justify-between">
           <div className="">
             <div className="xl:h-[22.69rem] xl:w-[22.75rem] rounded-[0.75rem] md:w-[15rem] md:h-[20.5rem]">
@@ -126,7 +126,7 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div class="relative flex overflow-x-hidden banner h-[3.6rem]">
+        <div class="flex absolute xl:top-[40%] xl:left-[-12%] xl:right-[0%] md:top-[40%] md:left-[-20%] top-[-10%] left-[-35%] overflow-x-hidden banner h-[3.6rem] w-[105rem]">
           <div class="animate-marquee whitespace-nowrap banner-two flex justify-center items-center">
             <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
               UX Design
@@ -151,7 +151,7 @@ export const HeroSection = () => {
             </span>
           </div>
 
-          {/* <div class="relative top-0 animate-marquee2 whitespace-nowrap flex justify-center items-center">
+          <div class="relative top-0 animate-marquee2 whitespace-nowrap flex justify-center items-center">
             <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
               UX Design
             </span>
@@ -173,7 +173,7 @@ export const HeroSection = () => {
             <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pr-6">
               Software Development
             </span>
-          </div> */}
+          </div>
         </div>
       </section>
     </>
