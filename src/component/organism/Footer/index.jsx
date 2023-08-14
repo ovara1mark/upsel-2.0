@@ -4,7 +4,7 @@ import linkedin from "../../../assets/linkedin.svg";
 import instagram from "../../../assets/instagram.svg";
 import facebook from "../../../assets/facebook.svg";
 import twitter from "../../../assets/twitter.svg";
-import star from "../../../assets/star.svg";
+import star from "../../../assets/star-white.svg";
 
 export const Footer = () => {
   return (
@@ -33,20 +33,26 @@ export const Footer = () => {
         alt="elevate Your Online Presence"
       /> */}
       <div className="flex overflow-hidden z-[-2] rotate-[358deg] my-[20px] bg-upsel-purple py-[9px] w-[120vw]">
-        <div className="flex items-center justify-between w-[200vw] animate-[scrollLeft_20s_linear_infinite]">
-          <div className="text-[1.8rem] w-[30em] ">
+        <div className="flex items-center justify-between w-[240vw] animate-scrollLeft">
+          <div className="ml-[20px] text-[1.8rem] w-[30em] ">
             Elevate Your Online Presence with a tailored Tech Solutions{" "}
           </div>
           <div className="">
             <img className="" src={star} alt="" />
           </div>
-          <div className="text-[1.8rem] w-[30em]">
+          <div className="ml-[20px] text-[1.8rem] w-[30em] ">
             Elevate Your Online Presence with a tailored Tech Solutions{" "}
           </div>
           <div className="">
             <img className="" src={star} alt="" />
           </div>
-          <div className="text-[1.8rem] w-[30em]">
+          <div className="ml-[20px] text-[1.8rem] w-[30em]">
+            Elevate Your Online Presence with a tailored Tech Solutions{" "}
+          </div>
+          <div className="">
+            <img className="" src={star} alt="" />
+          </div>
+          <div className="ml-[20px] text-[1.8rem] w-[30em]">
             Elevate Your Online Presence with a tailored Tech Solutions{" "}
           </div>
           <div className="">
