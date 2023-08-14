@@ -1,7 +1,20 @@
-.hero_video {
-  background-image: url(../src/assets/hero-video-lg.png);
+.fade-anim img {
+  animation: fadeAnim 0.5s ease-out;
 }
+/* @keyframes fadeAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
 
-.hero_purple {
-  background-image: url(../src/assets/purple-sm.png);
+.banner {
+  background: rgba(255, 255, 255, 0.65);
+  transform: rotate(-32.61deg);
+}
+.banner-two {
+  border-left: 1px dashed black;
+  border-right: 1px dashed black;
 }

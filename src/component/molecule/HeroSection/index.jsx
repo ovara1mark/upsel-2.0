@@ -1,18 +1,65 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import yellow from "../../../assets/yellow-lg.png";
-import yellow2 from "../../../assets/yellow-tab.png";
+import yellow2 from "../../../assets/yellow-tab.svg";
 import purple from "../../../assets/purple-lg.png";
-import purple2 from "../../../assets/purple-tab.png";
-import purple3 from "../../../assets/purple-sm.png";
-import video_hero2 from "../../../assets/hero-video-tab.png";
+import video_hero2 from "../../../assets/Frame1.svg";
 import video_hero from "../../../assets/hero-video-lg.png";
-import video_hero3 from "../../../assets/hero-video-sm.png";
+import video_hero3 from "../../../assets/Frame3.svg";
+import video_hero4 from "../../../assets/Frame4.svg";
+import video_hero5 from "../../../assets/Frame5.svg";
+import video_hero6 from "../../../assets/Frame6.svg";
+import video_hero7 from "../../../assets/Frame7.svg";
 import button_arrow from "../../../assets/Buttons.svg";
+import star from "../../../assets/star.svg";
 
 export const HeroSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const featuredImages = [
+    video_hero,
+    video_hero2,
+    video_hero3,
+    video_hero4,
+    video_hero5,
+    video_hero6,
+    video_hero7,
+  ];
+  const slideRef = useRef();
+  let count = 0;
+  let slideInterval;
+  const handleOnNextClick = () => {
+    count = (count + 1) % featuredImages.length;
+    setCurrentIndex(count);
+    slideRef.current.classList.add("fade-anim");
+  };
+
+  const removeAnimation = () => {
+    slideRef.current.classList.remove("fade-anim");
+  };
+
+  useEffect(() => {
+    startSlider();
+    slideRef.current.addEventListener("animationend", removeAnimation);
+    slideRef.current.addEventListener("mouseenter", pauseSlider);
+    slideRef.current.addEventListener("mouseleave", startSlider);
+
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, []);
+
+  const startSlider = () => {
+    slideInterval = setInterval(() => {
+      handleOnNextClick();
+    }, 1000);
+  };
+
+  const pauseSlider = () => {
+    clearInterval(slideInterval);
+  };
+
   return (
     <>
-      <section className="bg-upsel-black lg:py-[2.5rem] md:py-[0.75rem]">
+      <section className="bg-upsel-black lg:py-[2.5rem] md:py-[0.75rem] hero-section relative overflow-hidden">
         <div className="lg:px-[5rem] lg:pt-[1.5rem] lg:pb-[1.25rem] md:py:-[3rem] md:px-[2.5rem] py-[1.25rem] px-[1.5rem] bg-upsel-black flex flex-col-reverse md:flex md:flex-row md:justify-between">
           <div className="">
             <div className="xl:h-[22.69rem] xl:w-[22.75rem] rounded-[0.75rem] md:w-[15rem] md:h-[20.5rem]">
@@ -23,17 +70,11 @@ export const HeroSection = () => {
                 className="hidden md:block xl:hidden"
               />
             </div>
-            <div className="xl:h-[17.8rem] xl:w-[22.3rem] xl:mt-3 rounded-[0.75rem] md:w-[14.6rem] md:h-[17.8rem] mt-[1.25rem] mb-[2.12rem] w-full h-[14rem] bg-no-repeat bg-cover hero_purple">
-              <img src={purple} alt="purple" className="hidden xl:block" />
+            <div className="xl:h-[17.8rem] xl:w-[22.3rem] xl:mt-3 rounded-[0.75rem] md:w-[14.6rem] md:h-[17.8rem] mt-[1.25rem] mb-[2.12rem] aspect-w-16 h-[14rem]">
               <img
-                src={purple2}
+                src={purple}
                 alt="purple"
-                className="hidden md:block xl:hidden"
-              />
-              <img
-                src={purple3}
-                alt="purple"
-                className="hidden md:hidden xl:hidden"
+                className="object-cover rounded-[0.75rem]"
               />
             </div>
             <div className="text-holder-2 md:hidden">
@@ -51,24 +92,16 @@ export const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="hero-right">
             <div className=" md:flex md:justify-end">
-              <div className="xl:w-[45.75rem] xl:h-[22.69rem] rounded-[0.75rem] md:w-[25.6rem] md:h-[17rem] w-full h-[14rem] bg-no-repeat bg-cover hero_video">
-                <img
-                  src={video_hero}
-                  alt="video_hero"
-                  className="hidden md:hidden xl:block"
-                />
-                <img
-                  src={video_hero2}
-                  alt="video_hero"
-                  className="hidden md:block xl:hidden"
-                />
-                <img
-                  src={video_hero3}
-                  alt="video_hero"
-                  className="hidden md:hidden xl:hidden"
-                />
+              <div ref={slideRef} className="transition ease-in-out delay-50">
+                <div className="xl:w-[45.75rem] xl:h-[22.69rem] rounded-[0.75rem] md:w-[25.6rem] md:h-[17rem] aspect-w-16 h-[14rem]">
+                  <img
+                    src={featuredImages[currentIndex]}
+                    alt="video"
+                    className="object-cover rounded-[0.75rem]"
+                  />
+                </div>
               </div>
             </div>
 
@@ -91,6 +124,55 @@ export const HeroSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="flex absolute xl:top-[40%] xl:left-[-12%] xl:right-[0%] md:top-[40%] md:left-[-20%] top-[-10%] left-[-35%] overflow-x-hidden banner h-[3.6rem] w-[105rem]">
+          <div class="animate-marquee whitespace-nowrap banner-two flex justify-center items-center">
+            <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
+              UX Design
+            </span>
+            <span>
+              <img src={star} alt="star" className="mx-4 flex pt-2" />
+            </span>
+            <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4">
+              Branding
+            </span>
+            <span>
+              <img src={star} alt="star" className="mx-4 flex pt-2" />
+            </span>
+            <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4">
+              Marketing
+            </span>
+            <span>
+              <img src={star} alt="star" className="mx-4 flex pt-2" />
+            </span>
+            <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pr-6">
+              Software Development
+            </span>
+          </div>
+
+          <div class="relative top-0 animate-marquee2 whitespace-nowrap flex justify-center items-center">
+            <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
+              UX Design
+            </span>
+            <span>
+              <img src={star} alt="star" className="mx-4 flex pt-2" />
+            </span>
+            <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4">
+              Branding
+            </span>
+            <span>
+              <img src={star} alt="star" className="mx-4 flex pt-2" />
+            </span>
+            <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4">
+              Marketing
+            </span>
+            <span>
+              <img src={star} alt="star" className="mx-4 flex pt-2" />
+            </span>
+            <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pr-6">
+              Software Development
+            </span>
           </div>
         </div>
       </section>
