@@ -1,13 +1,14 @@
 import React from "react";
 import { HeroSection, Navbar } from "../../molecule";
-import { Footer } from "../../organism";
+import { Footer, AboutSection } from "../../organism";
 
 export const HomePage = () => {
   return (
     <>
       <Navbar />
       <HeroSection />
-      <Footer />
+      <AboutSection />
+      {/* <Footer /> */}
     </>
   );
 };
