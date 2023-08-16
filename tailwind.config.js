@@ -11,10 +11,12 @@ export default {
         "upsel-white": "#ffffff",
         "upsel-light-grey": "#D9D9D9",
         "upsel-grey": "#E6E6E6",
+        "upsel-footer-grey": "#EBE9F1",
       },
       animation: {
         marquee: "marquee 15s linear infinite",
         marquee2: "marquee2 15s linear infinite",
+        scrollLeft:'scrollLeft 20s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -25,6 +27,10 @@ export default {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        scrollLeft:{
+          '0%': {transform: 'translateX(0%)'},
+          '100%' :{transform: 'translateX(-50%)'},
+        }
       },
     },
     fontFamily: {
