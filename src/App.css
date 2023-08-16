@@ -12,9 +12,33 @@
 
 .banner {
   background: rgba(255, 255, 255, 0.65);
-  transform: rotate(-32.61deg);
+  transform: rotate(-57.293deg);
 }
 .banner-two {
   border-left: 1px dashed black;
   border-right: 1px dashed black;
+}
+
+@media screen and (min-width: 500px) {
+  .banner {
+    background: rgba(255, 255, 255, 0.65);
+    transform: rotate(-45.288deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background: rgba(255, 255, 255, 0.65);
+    transform: rotate(-45.288deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    background: rgba(255, 255, 255, 0.65);
+    transform: rotate(-32.61deg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }

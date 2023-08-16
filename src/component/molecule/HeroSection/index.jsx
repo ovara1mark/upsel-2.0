@@ -126,7 +126,7 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div class="flex absolute xl:top-[40%] xl:left-[-12%] xl:right-[0%] md:top-[40%] md:left-[-20%] top-[-10%] left-[-35%] overflow-x-hidden banner h-[3.6rem] w-[105rem]">
+        <div class="flex absolute lg:top-[40%] lg:left-[-15%] xl:right-[0%] md:top-[35%] md:left-[-40%]  ym:top-[40%] ym:left-[-100%] top-[0%] left-[-130%] overflow-x-hidden banner h-[3.6rem] w-[105rem]">
           <div class="animate-marquee whitespace-nowrap banner-two flex justify-center items-center">
             <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
               UX Design

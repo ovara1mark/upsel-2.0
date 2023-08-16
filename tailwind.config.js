@@ -16,7 +16,7 @@ export default {
       animation: {
         marquee: "marquee 15s linear infinite",
         marquee2: "marquee2 15s linear infinite",
-        scrollLeft:'scrollLeft 20s linear infinite',
+        scrollLeft: "scrollLeft 20s linear infinite",
       },
       keyframes: {
         marquee: {
@@ -27,14 +27,32 @@ export default {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
         },
-        scrollLeft:{
-          '0%': {transform: 'translateX(0%)'},
-          '100%' :{transform: 'translateX(-50%)'},
-        }
+        scrollLeft: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
     },
     fontFamily: {
       custom: ["DM Sans", "sans-serif"],
+    },
+    screens: {
+      ym: "500px",
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
     },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
