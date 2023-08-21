@@ -3,7 +3,23 @@ import React from "react";
 export const ContactForm = () => {
   return (
     <div>
-      <div>
+      <form>
+        <div>
+          <div className="checkboxes c1">
+            <input
+              className="w-0"
+              type="checkbox"
+              name="checkboxes"
+              id="product-design"
+            />
+            <label
+              htmlFor="product-design"
+              className="bg-upsel-white px-[26px] py-[11px] rounded-full  "
+            >
+              Product Design
+            </label>
+          </div>
+        </div>
         <label className="block">Name</label>
         <input
           clas
@@ -14,7 +30,7 @@ export const ContactForm = () => {
           //   onChange={(e) => setFullName(e.target.value)}
           required
         />
-      </div>
+      </form>
     </div>
   );
 };

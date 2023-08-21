@@ -8,8 +8,8 @@ import star from "../../../assets/star-white.svg";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center relative bg-upsel-black py-[5rem] overflow-hidden">
-      <ul className="flex gap-[40px] justify-center items-center text-[.85rem] text-upsel-footer-grey md:text-[1.45rem] gap-[2.95rem] lg:text-[2rem]  ">
+    <section className="flex flex-col justify-center items-center relative bg-upsel-black py-[5rem] overflow-hidden">
+      <ul className="flex gap-[40px] justify-center items-center text-[.85rem] text-upsel-footer-grey md:text-[1.15rem] gap-[2.35rem] lg:text-[1.7rem] gap-[4.55rem] ">
         <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
           About Us
         </li>
@@ -97,6 +97,6 @@ export const Footer = () => {
         </p>
       </div>
       <p className="text-upsel-footer-grey text-[0.9rem]">© 2023 -Upsel</p>
-    </div>
+    </section>
   );
 };

@@ -19,6 +19,11 @@
   border-right: 1px dashed black;
 }
 
+/* Gradient Background */
+.gradient-bg{
+  background: linear-gradient(180deg, #7000FF 0%, black 87.50%);
+}
+
 @media screen and (min-width: 500px) {
   .banner {
     background: rgba(255, 255, 255, 0.65);
