@@ -1,12 +1,13 @@
 import React from "react";
-import { HeroSection, Navbar } from "../../molecule";
-import { Footer } from "../../organism";
+import { HeroSection, Navbar, ContactForm } from "../../molecule";
+import { Footer, ContactUs } from "../../organism";
 
 export const HomePage = () => {
   return (
     <>
       <Navbar />
       <HeroSection />
+      <ContactUs />
       <Footer />
     </>
   );
