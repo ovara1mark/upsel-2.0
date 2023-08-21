@@ -59,7 +59,7 @@ export const HeroSection = () => {
 
   return (
     <>
-      <section className="bg-upsel-black lg:py-[2.5rem] md:py-[0.75rem] hero-section relative overflow-hidden">
+      <section className="bg-upsel-black lg:py-[2.5rem] md:pt-[0.75rem] md:pb-[6.5rem] pb-[4.25rem] hero-section relative overflow-hidden">
         <div className="lg:px-[5rem] lg:pt-[1.5rem] lg:pb-[1.25rem] md:py:-[3rem] md:px-[2.5rem] py-[1.25rem] px-[1.5rem] bg-upsel-black flex flex-col-reverse md:flex md:flex-row md:justify-between">
           <div className="">
             <div className="xl:h-[22.69rem] xl:w-[22.75rem] rounded-[0.75rem] md:w-[15rem] md:h-[20.5rem]">

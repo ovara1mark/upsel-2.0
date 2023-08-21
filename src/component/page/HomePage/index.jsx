@@ -1,14 +1,17 @@
 import React from "react";
-import { HeroSection, Navbar, ContactForm } from "../../molecule";
-import { Footer, ContactUs } from "../../organism";
+import { HeroSection, Navbar } from "../../molecule";
+import { Footer, AboutSection, ContactUs } from "../../organism";
 
 export const HomePage = () => {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <ContactUs />
-      <Footer />
+      <main className="bg-upsel-black">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <ContactUs />
+        <Footer />
+      </main>
     </>
   );
 };
