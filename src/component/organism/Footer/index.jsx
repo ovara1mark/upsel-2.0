@@ -8,8 +8,8 @@ import star from "../../../assets/star-white.svg";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center z-[-3] relative bg-upsel-black py-[5rem] overflow-hidden">
-      <ul className="flex gap-[2.95rem] justify-center items-center text-[1.25rem] text-upsel-footer-grey ">
+    <section className="flex flex-col justify-center items-center relative bg-upsel-black py-[5rem] overflow-hidden">
+      <ul className="flex gap-[40px] justify-center items-center text-[.85rem] text-upsel-footer-grey md:text-[1.15rem] gap-[2.35rem] lg:text-[1.7rem] gap-[4.55rem] ">
         <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
           About Us
         </li>
@@ -19,7 +19,7 @@ export const Footer = () => {
         <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
           Projects
         </li>
-        <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
+        <li className="hidden cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple lg:block">
           FAQ
         </li>
         <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
@@ -27,46 +27,54 @@ export const Footer = () => {
         </li>
       </ul>
 
-      {/* <img
-        className="w-full"
-        src={footerbg}
-        alt="elevate Your Online Presence"
-      /> */}
-      <div className="flex overflow-hidden z-[-2] rotate-[358deg] my-[20px] bg-upsel-purple py-[9px] w-[120vw]">
-        <div className="flex items-center justify-between w-[240vw] animate-scrollLeft">
-          <div className="ml-[20px] text-[1.8rem] w-[30em] ">
+      <div className="flex overflow-hidden  rotate-[358deg] my-[40px] bg-upsel-purple py-[9px] w-[120vw]">
+        <div className="flex items-center justify-evenly whitespace-nowrap gap-[20px] animate-scrollLeft">
+          <div className="text-[1.3rem] md:text-[1.3rem] lg:text-[1.8rem] ">
             Elevate Your Online Presence with a tailored Tech Solutions{" "}
           </div>
-          <div className="">
+          <div className="w-[20px] lg:w-[30px]">
             <img className="" src={star} alt="" />
           </div>
-          <div className="ml-[20px] text-[1.8rem] w-[30em] ">
+          <div className="text-[1.3rem] md:text-[1.3rem] lg:text-[1.8rem] ">
             Elevate Your Online Presence with a tailored Tech Solutions{" "}
           </div>
-          <div className="">
+          <div className="w-[20px] lg:w-[30px]">
             <img className="" src={star} alt="" />
           </div>
-          <div className="ml-[20px] text-[1.8rem] w-[30em]">
+          <div className="text-[1.3rem] md:text-[1.3rem] lg:text-[1.8rem]">
             Elevate Your Online Presence with a tailored Tech Solutions{" "}
           </div>
-          <div className="">
+          <div className="w-[20px] lg:w-[30px]">
             <img className="" src={star} alt="" />
           </div>
-          <div className="ml-[20px] text-[1.8rem] w-[30em]">
+          <div className="text-[1.3rem] md:text-[1.3rem] lg:text-[1.8rem]">
             Elevate Your Online Presence with a tailored Tech Solutions{" "}
           </div>
-          <div className="">
+          <div className="w-[20px] lg:w-[30px]">
             <img className="" src={star} alt="" />
           </div>
         </div>
       </div>
-      <div className="text-upsel-footer-grey">
-        <p className="text-[1.25rem] mt-1">+234-000-0000-788</p>
-        <p className="text-[1.25rem] mt-1">+234-000-0000-788</p>
-        <p className="text-[1.75rem] mt-1">upsel@gmail.com</p>
+      <div className="text-upsel-footer-grey text-center ">
+        <a href="tel:+234-000-0000-788">
+          <p className=" text-[0.87rem] lg:text-[1.1rem] mt-1">
+            +234-000-0000-788
+          </p>
+        </a>
+        <a href="tel:+234-000-0000-788">
+          <p className=" text-[0.87rem] lg:text-[1.1rem] mt-1">
+            +234-000-0000-788
+          </p>
+        </a>
+        <a href="mailto:upsel@gmail.com">
+          {" "}
+          <p className=" text-[1.1rem] lg:text-[1.5rem] mt-1">
+            upsel@gmail.com
+          </p>
+        </a>
       </div>
 
-      <div className="flex justify-around items-center w-2/5 py-[5rem]">
+      <div className="flex justify-around items-center w-4/5 py-[5rem] lg:w-2/5">
         <div>
           <img src={linkedin} alt="upsel linkedin" />
         </div>
@@ -80,7 +88,7 @@ export const Footer = () => {
           <img src={twitter} alt="upsel twitter" />
         </div>
       </div>
-      <div className="flex justify-around items-center w-1/5 my-[1.6rem] text-[1rem] ">
+      <div className="flex justify-center gap-[40px] items-center w-4/5 my-[1.6rem] text-[1rem] lg:w-1/5 ">
         <p className="cursor-pointer text-upsel-footer-grey hover:text--upsel-light-purple hover:text-upsel-light-purple">
           Terms& Condition
         </p>
@@ -89,6 +97,6 @@ export const Footer = () => {
         </p>
       </div>
       <p className="text-upsel-footer-grey text-[0.9rem]">© 2023 -Upsel</p>
-    </div>
+    </section>
   );
 };
