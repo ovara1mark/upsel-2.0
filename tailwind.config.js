@@ -16,6 +16,8 @@ export default {
       animation: {
         marquee: "marquee 15s linear infinite",
         marquee2: "marquee2 15s linear infinite",
+        marquee3: "marquee 5s linear infinite",
+        marquee4: "marquee 5s linear infinite",
         scrollLeft: "scrollLeft 20s linear infinite",
       },
       keyframes: {
@@ -26,6 +28,14 @@ export default {
         marquee2: {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        marquee3: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee4: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(0%)" },
         },
         scrollLeft: {
           "0%": { transform: "translateX(0%)" },

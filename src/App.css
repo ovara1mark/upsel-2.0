@@ -12,13 +12,13 @@
 }
 
 /* Gradient Background */
-.gradient-bg{
-  background: linear-gradient(180deg, #7000FF 0%, black 87.50%);
+.gradient-bg {
+  background: linear-gradient(180deg, #7000ff 0%, black 87.5%);
 }
 
 /* about section */
 .about {
-  background-image: url(./assets/about.svg);
+  /* background-image: url(./assets/about.svg); */
   background-position: cover;
   background-repeat: no-repeat;
   height: 700vh;
