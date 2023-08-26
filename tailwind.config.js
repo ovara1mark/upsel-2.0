@@ -5,9 +5,11 @@ export default {
     extend: {
       colors: {
         "upsel-black": "#000000",
+        "upsel-black-2": "#262626",
         "upsel-light-black": "#1f1f1f",
         "upsel-purple": "#372772",
         "upsel-light-purple": "#925ff0",
+        "upsel-light-border-purple": "#A9A2C2",
         "upsel-white": "#ffffff",
         "upsel-light-grey": "#D9D9D9",
         "upsel-grey": "#E6E6E6",
