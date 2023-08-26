@@ -4,7 +4,7 @@ import linkedin from "../../../assets/linkedin.svg";
 import instagram from "../../../assets/instagram.svg";
 import facebook from "../../../assets/facebook.svg";
 import twitter from "../../../assets/twitter.svg";
-import star from "../../../assets/star-white.svg";
+import star from "../../../assets/star-whites.svg";
 
 export const Footer = () => {
   return (
