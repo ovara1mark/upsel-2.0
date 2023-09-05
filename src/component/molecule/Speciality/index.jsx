@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
-import video_hero8 from "../../../assets/Frame8.svg";
-import video_hero9 from "../../../assets/Frame9.svg";
-import video_hero10 from "../../../assets/Frame10.svg";
-import video_hero11 from "../../../assets/Frame11.svg";
-import video_hero12 from "../../../assets/Frame12.svg";
+import video_hero8 from "../../../assets/frame8.svg";
+import video_hero9 from "../../../assets/frame9.svg";
+import video_hero10 from "../../../assets/frame10.svg";
+import video_hero11 from "../../../assets/frame11.svg";
+import video_hero12 from "../../../assets/frame12.svg";
 import star_white from "../../../assets/star-white.svg";
 
 export const Speciality = () => {
