@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Banner } from "../../molecule";
+import { About, Banner, Speciality } from "../../molecule";
 
 export const AboutSection = () => {
   return (
@@ -7,6 +7,7 @@ export const AboutSection = () => {
       <section className="about">
         <About />
         <Banner />
+        <Speciality />
       </section>
     </>
   );
