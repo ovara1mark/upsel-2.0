@@ -51,7 +51,7 @@ export const FaqSection = () => {
             return (
               <div key={index} className="each py-[10px]  px-[16px] w-full">
                 <div className="flex justify-between lg:py-[16px]">
-                  <h2 className="text-[12px] font-medium lg:text-[18px]">
+                  <h2 className="text-[12px] font-medium w-[90%] lg:text-[18px]">
                     {elem.title}
                   </h2>
                   <span
