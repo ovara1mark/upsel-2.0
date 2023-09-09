@@ -26,12 +26,11 @@
 }
 
 /* special section */
-/* .special-section {
-  background-image: url("./assets/circles.gif");
-  background-position: bottom;
+.special-section {
+  background-image: url("./assets/circles.svg");
+  background-position: 0% 100%;
   background-repeat: no-repeat;
-  height: 100vh;
-} */
+}
 @media screen and (min-width: 500px) {
   .banner {
     background: rgba(255, 255, 255, 0.65);

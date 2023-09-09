@@ -70,8 +70,8 @@ export const Speciality = () => {
                 Speciality
               </span>
             </div>
-            <div>
-              <div className="pt-[2rem]">
+            <div className="border lg:pl-[9rem] md:pl-[6rem] pl-[1.5rem]">
+              <div className="pt-[2rem]   md:pl-[6rem] pl-[4rem]">
                 <p className="md:text-[1.125rem] text-upsel-light-grey font-normal md:w-[24.5rem] w-[14.3rem] md:leading-[1.625rem] text-[0.75rem] leading-[1.375rem]">
                   We specialise in crafting tailor-made websites that propel
                   health and wellness businesses to success.
@@ -84,8 +84,8 @@ export const Speciality = () => {
                 </span>
               </div>
             </div>
-            <div>
-              <div className="pt-[2.5rem]">
+            <div className="lg:pl-[6rem] md:pl-[4rem] pl-[1.5rem] ">
+              <div className="pt-[2.5rem] md:pl-[7rem] pl-[3rem]">
                 <p className="md:text-[1.125rem] text-upsel-light-grey font-normal md:w-[30.5rem] w-[15.3rem] md:leading-[1.625rem] text-[0.75rem] leading-[1.375rem]">
                   From seamless online registration to dynamic event schedules,
                   our expert team collaborates with you to deliver exceptional
