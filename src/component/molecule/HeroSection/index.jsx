@@ -12,6 +12,7 @@ import video_hero7 from "../../../assets/Frame7.svg";
 import button_arrow from "../../../assets/Buttons.svg";
 import star from "../../../assets/star.svg";
 import Marquee from "react-fast-marquee";
+import { Button } from "../../atom/Button";
 
 export const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -108,9 +109,7 @@ export const HeroSection = () => {
 
             <div className="text-holder">
               <div className="lg:mt-[2.94rem] md:mt-[1.5rem] mt-[1.89rem] flex justify-end">
-                <button className="text-[.875rem] italic text-upsel-white font-normal md:text-[1rem] lg:text-[1.25rem] rounded-[0.25rem] lg:w-[16.25rem] lg:px-[2rem] lg:py-[1rem] flex justify-center items-center bg-upsel-light-purple cursor-pointer md:w-[13.75rem] md:px-[1.5rem] md:py-[.75rem] w-[7.5rem] px-[1rem] py-[.5rem] transition ease-in-out delay-150 hover:bg-upsel-purple">
-                  Hire Us
-                </button>
+                <Button>Hire Us</Button>
               </div>
               <div className="hidden lg:mt-[1.94rem] md:mt-[2.69rem] xl:flex xl:justify-between xl:flex-row md:flex md:flex-col">
                 <div className="lg:w-[32rem] md:w-[23.875rem] w-[19.5rem] font-bold text-upsel-white leading-[3.25rem] lg:text-[3rem] md:text-[3rem] text-[2rem]">

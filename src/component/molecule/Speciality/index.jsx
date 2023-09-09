@@ -5,6 +5,7 @@ import video_hero10 from "../../../assets/frame10.svg";
 import video_hero11 from "../../../assets/frame11.svg";
 import video_hero12 from "../../../assets/frame12.svg";
 import star_white from "../../../assets/star-white.svg";
+import { Button } from "../../atom";
 
 export const Speciality = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +52,7 @@ export const Speciality = () => {
 
   return (
     <>
-      <section className="lg:pt-[8.25rem] lg:px-[5.31rem] md:pt-[6.8rem] md:px-[2.38rem] px-[1.5rem] pt-[7.97rem] special-section border">
+      <section className="lg:pt-[8.25rem] lg:px-[5.31rem] md:pt-[6.8rem] md:px-[2.38rem] px-[1.5rem] pt-[7.97rem] special-section">
         <div className="flex justify-center">
           <div ref={slideRef} className="transition ease-in-out delay-50">
             <div className="xl:w-[69.375rem] xl:h-[38.125rem] rounded-[0.75rem]">
@@ -64,13 +65,13 @@ export const Speciality = () => {
           </div>
         </div>
         <div className="lg:flex lg:justify-end">
-          <div className="lg:pt-[3.25rem] md:pt-[7.33rem] pt-[9rem] lg:w-[45rem] border">
+          <div className="lg:pt-[3.25rem] md:pt-[7.33rem] pt-[9rem] lg:w-[45rem]">
             <div>
               <span className="md:text-[2.5rem] text-upsel-light-grey font-bold text-[2rem]">
                 Speciality
               </span>
             </div>
-            <div className="border lg:pl-[9rem] md:pl-[6rem] pl-[1.5rem]">
+            <div className="lg:pl-[9rem] md:pl-[6rem] pl-[1.5rem]">
               <div className="pt-[2rem]   md:pl-[6rem] pl-[4rem]">
                 <p className="md:text-[1.125rem] text-upsel-light-grey font-normal md:w-[24.5rem] w-[14.3rem] md:leading-[1.625rem] text-[0.75rem] leading-[1.375rem]">
                   We specialise in crafting tailor-made websites that propel
@@ -99,7 +100,9 @@ export const Speciality = () => {
                 </span>
               </div>
             </div>
-            <div></div>
+            <div className="lg:pt-[2.58rem] md:pt-[4.08rem] pt-[3.43rem] flex justify-end">
+              <Button>Hire Us</Button>
+            </div>
           </div>
         </div>
       </section>
