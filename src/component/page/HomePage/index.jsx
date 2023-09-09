@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroSection, Navbar } from "../../molecule";
-import { Footer, AboutSection, ContactUs } from "../../organism";
+import { Footer, AboutSection, ContactUs, FaqSection } from "../../organism";
 
 export const HomePage = () => {
   return (
@@ -9,6 +9,7 @@ export const HomePage = () => {
         <Navbar />
         <HeroSection />
         <AboutSection />
+        <FaqSection />
         <ContactUs />
         <Footer />
       </main>

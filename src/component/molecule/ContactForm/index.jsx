@@ -82,7 +82,7 @@ export const ContactForm = () => {
               Name
             </label>
             <input
-              className="w-full fon text-[14px] p-[14px] rounded-lg placeholder:italic "
+              className="w-full outline-upsel-purple text-[14px] p-[14px] rounded-lg placeholder:italic "
               type="text"
               placeholder="Enter your name"
               name="name"
@@ -96,7 +96,7 @@ export const ContactForm = () => {
               E-mail
             </label>
             <input
-              className="w-full fon text-[14px] p-[14px] rounded-lg placeholder:italic "
+              className="w-full outline-upsel-purple text-[14px] p-[14px] rounded-lg placeholder:italic "
               type="text"
               placeholder="Enter your name"
               name="name"
@@ -110,7 +110,7 @@ export const ContactForm = () => {
               Phone Number
             </label>
             <input
-              className="w-full fon text-[14px] p-[14px] rounded-lg placeholder:italic "
+              className="w-full outline-upsel-purple text-[14px] p-[14px] rounded-lg placeholder:italic "
               type="text"
               placeholder="Enter your name"
               name="name"
@@ -124,7 +124,7 @@ export const ContactForm = () => {
               Tell Us About Your Project
             </label>
             <textarea
-              className="w-full fon text-[14px] p-[14px] rounded-lg placeholder:italic "
+              className="w-full outline-upsel-purple text-[14px] p-[14px] rounded-lg placeholder:italic "
               type="text"
               placeholder="Enter your name"
               name="name"
@@ -138,7 +138,7 @@ export const ContactForm = () => {
               What is your budget for the project?
             </label>
             <input
-              className="w-full fon text-[14px] p-[14px] rounded-lg placeholder:italic "
+              className="w-full outline-upsel-purple text-[14px] p-[14px] rounded-lg placeholder:italic "
               type="text"
               placeholder="Enter your name"
               name="name"
