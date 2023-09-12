@@ -5,7 +5,7 @@ import more_2 from "../../../assets/more-on-us-2.svg";
 export const More = () => {
   return (
     <>
-      <section className="more border">
+      <section className="more">
         <img src={more} alt="" className="object-fit w-full hidden lg:block" />
         <img
           src={more_1}
