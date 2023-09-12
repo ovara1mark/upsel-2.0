@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import video_hero8 from "../../../assets/frame8.svg";
-import video_hero9 from "../../../assets/frame9.svg";
+// import video_hero9 from "../../../assets/frame9.svg";
 import video_hero10 from "../../../assets/frame10.svg";
 import video_hero11 from "../../../assets/frame11.svg";
 import video_hero12 from "../../../assets/frame12.svg";
@@ -11,7 +11,7 @@ export const Speciality = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const featuredImages = [
     video_hero8,
-    video_hero9,
+    // video_hero9,
     video_hero10,
     video_hero11,
     video_hero12,

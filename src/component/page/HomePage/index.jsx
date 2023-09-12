@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroSection, Navbar } from "../../molecule";
+import { HeroSection, More, Navbar } from "../../molecule";
 import { Footer, AboutSection, ContactUs, FaqSection } from "../../organism";
 
 export const HomePage = () => {
@@ -9,6 +9,7 @@ export const HomePage = () => {
         <Navbar />
         <HeroSection />
         <AboutSection />
+        <More />
         <FaqSection />
         <ContactUs />
         <Footer />
