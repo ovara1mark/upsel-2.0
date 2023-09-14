@@ -18,7 +18,7 @@ export const ContactUs = () => {
         </div>
         <ContactForm />
       </section>
-      <Thankyou />
+      {/* <Thankyou /> */}
     </>
   );
 };
