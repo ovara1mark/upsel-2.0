@@ -1,6 +1,6 @@
 import React from "react";
-import more from "../../../assets/more-on-us.svg";
-import more_1 from "../../../assets/more-on-us-1.svg";
+import more from "../../../assets/more-on-us.png";
+import more_1 from "../../../assets/more-on-us-1.png";
 import more_2 from "../../../assets/more-on-us-2.svg";
 export const More = () => {
   return (
