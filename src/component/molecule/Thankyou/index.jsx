@@ -3,8 +3,8 @@ import checked from "../../../assets/Check.svg";
 
 export const Thankyou = () => {
   return (
-    <section className="hidden flex flex-col justify-center items-center bg-upsel-purple z-[1000] w-[100vw] h-[100vh] fixed top-0">
-      <div className="flex flex-col justify-center items-center rounded-[28px] py-[16px] px-[34px] bg-upsel-white w-[86vw] md:w-[55vw] lg:w-[45vw] ">
+    <>
+      <div className="flex flex-col justify-center items-center rounded-[28px] py-[16px] px-[54px] bg-upsel-white w-[86vw] md:w-[55vw] lg:w-[45vw] ">
         <div>
           <img src={checked} alt="" />
         </div>
@@ -25,6 +25,6 @@ export const Thankyou = () => {
           </p>
         </div>
       </div>
-    </section>
+    </>
   );
 };
