@@ -6,3 +6,5 @@ export * from "./Banner";
 export * from "./Thankyou";
 export * from "./Speciality";
 export * from "./More";
+export * from "./Card";
+export * from "./Choose";

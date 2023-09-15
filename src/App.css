@@ -47,16 +47,55 @@
   }
 } */
 
+/* flip card */
+.card {
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.front {
+  backface-visibility: hidden;
+}
+
+.back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.cardFlip {
+  transform: rotateY(180deg);
+}
+
+/* choose section */
+
+.bg-choose {
+  background: linear-gradient(180deg, #b3faff 0%, #795ffa 204.74%);
+}
+
+.bg-choose-purple {
+  background: rgb(176, 166, 222);
+  background-image: radial-gradient(
+    circle 10rem at 80% 40%,
+    rgba(176, 166, 222, 1) 0%,
+    rgba(179, 250, 255, 1) 100%
+  );
+}
+
+.bg-choose-pink {
+  background: transparent;
+  background-image: radial-gradient(
+    circle 80rem at -30% 85%,
+    rgba(179, 250, 255, 1) 15%,
+    rgba(176, 166, 222, 0.582) 19%,
+    rgba(179, 250, 255, 0) 25%
+  );
+}
+
 @media screen and (min-width: 500px) {
   .banner {
     background: rgba(255, 255, 255, 0.65);
     transform: rotate(-45.288deg);
   }
-
-  /* .btn-down {
-    width: 5rem;
-    height: 5rem;
-  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -76,6 +115,24 @@
   .banner {
     background: rgba(255, 255, 255, 0.65);
     transform: rotate(-45.288deg);
+  }
+  .bg-choose-purple {
+    background: rgb(176, 166, 222);
+    background-image: radial-gradient(
+      circle 25rem at 80% 70%,
+      rgba(176, 166, 222, 1) 0%,
+      rgba(179, 250, 255, 1) 100%
+    );
+  }
+
+  .bg-choose-pink {
+    background: transparent;
+    background-image: radial-gradient(
+      circle 80rem at 10% 85%,
+      rgba(179, 250, 255, 1) 15%,
+      rgba(176, 166, 222, 0.582) 19%,
+      rgba(179, 250, 255, 0) 25%
+    );
   }
 }
 

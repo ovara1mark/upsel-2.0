@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroSection, More, Navbar } from "../../molecule";
+import { Card, Choose, HeroSection, More, Navbar } from "../../molecule";
 import {
   Footer,
   AboutSection,
@@ -17,6 +17,7 @@ export const HomePage = () => {
         <AboutSection />
         <More />
         <DetailSection />
+        <Choose />
         <FaqSection />
         <ContactUs />
         <Footer />

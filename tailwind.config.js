@@ -15,6 +15,8 @@ export default {
         "upsel-grey": "#E6E6E6",
         "upsel-footer-grey": "#EBE9F1",
         "upsel-transparent-purple": "#372772f5",
+        "upsel-dark-blue": "#191233",
+        "upsel-dark-purple": "#141414",
       },
       animation: {
         marquee: "marquee 15s linear infinite",

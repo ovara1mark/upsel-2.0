@@ -36,7 +36,12 @@ export const DetailSection = () => {
                 </button>
               </div>
             </div>
-            <div className="card"></div>
+            <div className="card">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
           </div>
 
           <div className="flex  justify-center md:justify-start lg:justify-end lg:mt-[20.65rem] md:mt-[5rem] mt-[7rem]">
