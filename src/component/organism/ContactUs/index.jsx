@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactForm, Thankyou } from "../../molecule";
+import { ContactForm } from "../../molecule";
 
 export const ContactUs = () => {
   return (
@@ -18,7 +18,6 @@ export const ContactUs = () => {
         </div>
         <ContactForm />
       </section>
-      {/* <Thankyou /> */}
     </>
   );
 };

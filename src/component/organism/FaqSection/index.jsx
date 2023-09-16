@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import search from "../../../assets/Search.svg";
-import { frequent } from "./test";
+import { frequent } from "./questions";
 import arrowDown from "../../../assets/arrow-down.svg";
 import arrowUp from "../../../assets/arrow-up.svg";
+import faqStar from "../../../assets/faq-star.svg";
+import faqHexagon from "../../../assets/faq-hexagon.svg";
 
 export const FaqSection = () => {
   const [clicked, setClicked] = useState(false);
@@ -19,7 +21,16 @@ export const FaqSection = () => {
   );
 
   return (
-    <section className="flex flex-col gap-[6px] justify-center items-center gradient-bg pb-[15%] ">
+    <section className="flex flex-col gap-[6px] justify-center items-center pb-[55%] bg-faq-star relative gradient-bg md:pb-[25%] lg:pb-[15%] ">
+      <div className="absolute top-[31%] w-[10%] left-0 z-[1] md:w-[6%] lg:hidden">
+        <img className="w-full" src={faqStar} alt="" />
+      </div>
+      <div className="absolute w-[10%] top-[51%] right-0 z-[2] md:w-[6%] lg:hidden">
+        <img className="w-full" src={faqHexagon} alt="" />
+      </div>
+      <div className="absolute w-[10%] top-[91%] left-0 z-[1] md:w-[6%] lg:hidden">
+        <img className="w-full" src={faqStar} alt="" />
+      </div>
       <h3 className="text-[1.75rem]  text-upsel-white font-bold text-center mt-[15%] md:text-[2rem] lg:hidden  ">
         Have any questions?
       </h3>
@@ -46,7 +57,7 @@ export const FaqSection = () => {
         </span>
       </div>
       <div className="flex flex-col gap-[6px] justify-center items-center w-full">
-        <div className="main flex flex-col gap-[6px] justify-center items-center p-[12px] rounded-lg bg-upsel-white w-[90%]  md:w-7/8 lg:w-4/5">
+        <div className="main flex flex-col gap-[6px] z-[2] justify-center items-center p-[12px] rounded-lg bg-upsel-white w-[90%]  md:w-7/8 lg:w-4/5">
           {filteredFrequent.map((elem, index) => {
             return (
               <div key={index} className="each py-[10px]  px-[16px] w-full">
