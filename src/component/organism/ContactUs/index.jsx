@@ -4,7 +4,7 @@ import { ContactForm } from "../../molecule";
 export const ContactUs = () => {
   return (
     <>
-      <section className="flex flex-col justify-center items-left py-[3.125rem] gradient-bg lg:py-[7.125rem] lg:pl-[9rem]">
+      <section className="flex flex-col justify-center items-left gradient-bg py-[3.125rem] lg:py-[9.625rem] lg:pl-[9rem] lg:bg-contact-us-bg lg:bg-cover ">
         <div className="w-full px-[1.4rem] lg:w-3/5">
           <h2 className="font-bold tracking-wide text-upsel-white text-[2rem] leading-[38px] md:text-[2.875rem] lg:text-[6rem] lg:leading-[112px] ">
             Request a consultation
