@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Thankyou } from "../Thankyou";
+import checked from "../../../assets/Check.svg";
 
 export const ContactForm = () => {
   const [submit, setSubmit] = useState(false);
@@ -180,12 +180,41 @@ export const ContactForm = () => {
           </div>
         </form>
       </div>
+      {/* Thank you component */}
       {submit ? (
         <section
           onClick={closeThankyou}
           className="flex flex-col justify-center items-center bg-upsel-transparent-purple z-[1000] w-[100vw] h-[100vh] fixed top-0 right-0"
         >
-          <Thankyou />
+          <div className="flex flex-col justify-center items-center  rounded-[28px] py-[26px] px-[24px] bg-upsel-white w-[86vw] md:px-[34px]  md:w-[55vw] lg:w-[45vw] ">
+            <div className="w-full flex justify-end">
+              <span
+                onClick={closeThankyou}
+                className="text-[1.1rem] cursor-pointer"
+              >
+                &#128473;
+              </span>
+            </div>
+            <div>
+              <img src={checked} alt="" />
+            </div>
+            <div>
+              <h2 className="text-[1.4rem] font-bold text-center">
+                Thank you for reaching out!
+              </h2>
+              <p className="text-[1.1rem] text-center  mb-[10px]">
+                We appreciate your interest in our services.{" "}
+              </p>
+              <p className="text-[1.1rem] text-center mb-[10px]">
+                Our team will review your message and get back to you as soon as
+                possible.
+              </p>
+              <p className="text-[1.1rem] text-center mb-[10px]">
+                In the meantime, feel free to explore our website and learn more
+                about what we can offer.
+              </p>
+            </div>
+          </div>
         </section>
       ) : (
         ""

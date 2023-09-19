@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'contact-us-bg': "url('./assets/Contact us desktop-bg.png')",
+      },
       colors: {
         "upsel-black": "#000000",
         "upsel-black-2": "#262626",
