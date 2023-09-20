@@ -25,16 +25,16 @@ export const DetailSection = () => {
         <div className="flex flex-col overflow-hidden items-center md:block lg:grid lg:grid-cols-2 md:gap-4 md:px-[2.5rem] px-[1rem] lg:px-[4rem] xl:px-[10rem]">
           <div
             className={`lg:mt-[5rem]  md:mt-[5rem] lg:block md:flex md:flex-col md:items-center  mt-[7rem]  ${
-              isItemActive(0) ? "lg:pt-[20.65rem]" : ""
+              isItemActive(0) ? "lg:pt-[14.65rem]" : ""
             } ${
               isItemActive(1)
-                ? "lg:mt-[-32rem] lg:order-2 lg:flex lg:justify-end"
+                ? "lg:mt-[-40rem] lg:order-2 lg:flex lg:justify-end"
                 : ""
             }
              `}
           >
             <div className="flex justify-center">
-              <div className="md:w-[20.75rem] border ">
+              <div className="md:w-[20.75rem] ">
                 <div className="w-[17.5rem]">
                   <span className="text-[2.5rem] font-bold  text-upsel-white">
                     Software Engineering
@@ -75,7 +75,7 @@ export const DetailSection = () => {
                   : "hidden transition ease-in-out delay-150"
               }`}
             >
-              <div className="flex flex-wrap justify-center  gap-3">
+              <div className="flex flex-wrap lg:flex-nowrap lg:justify-start justify-center  gap-3">
                 <Card />
                 <Card />
                 <Card />
@@ -85,8 +85,8 @@ export const DetailSection = () => {
 
           <div
             className={` lg:mt-[20.65rem] md:mt-[5rem] mt-[7rem] ${
-              isItemActive(0) ? "lg:mt-[-32rem]" : ""
-            } ${isItemActive(1) ? "lg:mt-[23rem] lg:order-1" : ""}`}
+              isItemActive(0) ? "lg:mt-[-33rem]" : ""
+            } ${isItemActive(1) ? "lg:mt-[10.65rem] lg:order-1" : ""}`}
           >
             <div
               className={`  flex justify-center md:justify-start lg:justify-end ${
@@ -129,7 +129,7 @@ export const DetailSection = () => {
             </div>
 
             <div
-              className={`card mt-[2.55rem] flex flex-wrap justify-center  gap-3   ${
+              className={`card mt-[2.55rem] flex flex-wrap justify-center lg:flex-nowrap lg:justify-start  gap-3   ${
                 isItemActive(1) ? "block" : "hidden"
               } `}
             >
@@ -178,7 +178,7 @@ export const DetailSection = () => {
             </div>
 
             <div
-              className={`card  mt-[2.55rem] flex flex-wrap justify-center  gap-3  ${
+              className={`card  mt-[2.55rem] flex flex-wrap justify-center lg:flex-nowrap lg:justify-start  gap-3  ${
                 isItemActive(2) ? "block" : "hidden"
               }`}
             >
@@ -189,7 +189,7 @@ export const DetailSection = () => {
 
           <div
             className={` lg:mt-[14.65rem] md:mt-[5rem] mt-[7rem] order-4 ${
-              isItemActive(2) ? "lg:mt-[-32rem]" : ""
+              isItemActive(2) ? "lg:mt-[-33rem]" : ""
             }`}
           >
             <div className="lg:flex lg:justify-end">
