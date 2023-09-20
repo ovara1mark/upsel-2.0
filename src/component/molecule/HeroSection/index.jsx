@@ -126,28 +126,28 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div class="flex z-auto absolute lg:top-[40%] lg:left-[-15%] xl:right-[0%] md:top-[35%] md:left-[-40%]  ym:top-[40%] ym:left-[-100%] top-[0%] left-[-130%] overflow-x-hidden banner h-[3.6rem] w-[105rem]">
+        <div className="flex z-auto absolute lg:top-[40%] lg:left-[-15%] xl:right-[0%] md:top-[35%] md:left-[-40%]  ym:top-[40%] ym:left-[-100%] top-[0%] left-[-130%] overflow-x-hidden banner h-[3.6rem] w-[105rem]">
           <Marquee speed={100}>
-            <div class="whitespace-nowrap banner-two flex justify-center items-center">
-              <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
+            <div className="whitespace-nowrap banner-two flex justify-center items-center">
+              <span className="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
                 UX Design
               </span>
               <span>
                 <img src={star} alt="star" className="mx-4 flex pt-2" />
               </span>
-              <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4">
+              <span className="xl:text-[2rem] font-bold text-[1.25rem] mx-4">
                 Branding
               </span>
               <span>
                 <img src={star} alt="star" className="mx-4 flex pt-2" />
               </span>
-              <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4">
+              <span className="xl:text-[2rem] font-bold text-[1.25rem] mx-4">
                 Marketing
               </span>
               <span>
                 <img src={star} alt="star" className="mx-4 flex pt-2" />
               </span>
-              <span class="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pr-6">
+              <span className="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pr-6">
                 Software Development
               </span>
             </div>

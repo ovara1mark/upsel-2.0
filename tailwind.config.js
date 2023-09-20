@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'contact-us-bg': "url('./assets/Contact us desktop-bg.png')",
+        "contact-us-bg": "url('./assets/Contact us desktop-bg.png')",
       },
       colors: {
         "upsel-black": "#000000",
@@ -65,7 +65,7 @@ export default {
       md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      lg: "1024px",
+      lg: "1057px",
       // => @media (min-width: 1024px) { ... }
 
       xl: "1280px",

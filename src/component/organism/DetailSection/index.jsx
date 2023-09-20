@@ -24,47 +24,50 @@ export const DetailSection = () => {
       <section className="pb-[5rem] md:pb-[32rem]">
         <div className="flex flex-col overflow-hidden items-center md:block lg:grid lg:grid-cols-2 md:gap-4 md:px-[2.5rem] px-[1rem] lg:px-[4rem] xl:px-[10rem]">
           <div
-            className={`lg:mt-[5rem]  md:mt-[5rem] lg:block md:flex md:flex-col md:items-center border  mt-[7rem]  ${
+            className={`lg:mt-[5rem]  md:mt-[5rem] lg:block md:flex md:flex-col md:items-center  mt-[7rem]  ${
               isItemActive(0) ? "lg:pt-[20.65rem]" : ""
             } ${
               isItemActive(1)
-                ? "lg:mt-[-30rem] order-2 lg:flex lg:justify-end"
+                ? "lg:mt-[-32rem] lg:order-2 lg:flex lg:justify-end"
                 : ""
             }
              `}
           >
-            <div className="md:w-[20.75rem]">
-              <div className="w-[17.5rem]">
-                <span className="text-[2.5rem] font-bold  text-upsel-white">
-                  Software Engineering
-                </span>
-              </div>
+            <div className="flex justify-center">
+              <div className="md:w-[20.75rem] border ">
+                <div className="w-[17.5rem]">
+                  <span className="text-[2.5rem] font-bold  text-upsel-white">
+                    Software Engineering
+                  </span>
+                </div>
 
-              <div className="w-[17.5rem] py-[2rem]">
-                <p className="text-[1rem] font-normal leading-6 text-upsel-white">
-                  We provide software solutions for your business needs and help
-                  you stand out, providing you with the best advice for
-                  achieving success.
-                </p>
-              </div>
-              <div className="flex justify-end w-[17.5rem] md:w-full">
-                <button
-                  className="rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem] "
-                  onClick={() => toggleAccordion(0)}
-                >
-                  <img
-                    src={arrow_down}
-                    alt="arrow-down"
-                    className="lg:hidden"
-                  />
-                  <img
-                    src={arrow_down_2}
-                    alt="arrow-down"
-                    className="hidden lg:block"
-                  />
-                </button>
+                <div className="w-[17.5rem] py-[2rem]">
+                  <p className="text-[1rem] font-normal leading-6 text-upsel-white">
+                    We provide software solutions for your business needs and
+                    help you stand out, providing you with the best advice for
+                    achieving success.
+                  </p>
+                </div>
+                <div className="flex justify-end w-[17.5rem] md:w-full">
+                  <button
+                    className="rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem] "
+                    onClick={() => toggleAccordion(0)}
+                  >
+                    <img
+                      src={arrow_down}
+                      alt="arrow-down"
+                      className="lg:hidden"
+                    />
+                    <img
+                      src={arrow_down_2}
+                      alt="arrow-down"
+                      className="hidden lg:block"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
+
             <div
               className={`card  mt-[2.55rem] ${
                 isItemActive(0)
@@ -72,7 +75,7 @@ export const DetailSection = () => {
                   : "hidden transition ease-in-out delay-150"
               }`}
             >
-              <div className="lg:flex lg:gap-3 grid  lg:w-full">
+              <div className="flex flex-wrap justify-center  gap-3">
                 <Card />
                 <Card />
                 <Card />
@@ -82,8 +85,8 @@ export const DetailSection = () => {
 
           <div
             className={` lg:mt-[20.65rem] md:mt-[5rem] mt-[7rem] ${
-              isItemActive(0) ? "lg:mt-[-30rem]" : ""
-            } ${isItemActive(1) ? "lg:mt-[23rem] order-1" : ""}`}
+              isItemActive(0) ? "lg:mt-[-32rem]" : ""
+            } ${isItemActive(1) ? "lg:mt-[23rem] lg:order-1" : ""}`}
           >
             <div
               className={`  flex justify-center md:justify-start lg:justify-end ${
@@ -126,7 +129,7 @@ export const DetailSection = () => {
             </div>
 
             <div
-              className={`card mt-[2.55rem] flex gap-3   ${
+              className={`card mt-[2.55rem] flex flex-wrap justify-center  gap-3   ${
                 isItemActive(1) ? "block" : "hidden"
               } `}
             >
@@ -137,42 +140,45 @@ export const DetailSection = () => {
           </div>
 
           <div
-            className={`lg:mt-[5rem] md:mt-[5rem] lg:block md:flex md:justify-end mt-[7rem] order-3`}
+            className={`lg:mt-[5rem] md:mt-[5rem] lg:block md:flex md:flex-col md:items-end mt-[7rem] order-3`}
           >
-            <div className="md:w-[20.75rem] ">
-              <div className="w-[17.5rem]">
-                <span className="text-[2.5rem] font-bold  text-upsel-white">
-                  Brand Design & Graphics
-                </span>
-              </div>
-              <div className="w-[17.5rem] py-[2rem]">
-                <p className="text-[1rem] font-normal leading-6 text-upsel-white">
-                  We understand that brand identity is a critical component of
-                  any business, and that's why we focus on delivering brand and
-                  graphic design solutions that are memorable, effective, and
-                  distinctive.
-                </p>
-              </div>
-              <div className="flex justify-end w-[17.5rem] md:w-full">
-                <button
-                  onClick={() => toggleAccordion(2)}
-                  className="rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem]"
-                >
-                  <img
-                    src={arrow_down}
-                    alt="arrow-down"
-                    className="lg:hidden"
-                  />
-                  <img
-                    src={arrow_down_2}
-                    alt="arrow-down"
-                    className="hidden lg:block"
-                  />
-                </button>
+            <div className="flex justify-center">
+              <div className="md:w-[20.75rem] ">
+                <div className="w-[17.5rem]">
+                  <span className="text-[2.5rem] font-bold  text-upsel-white">
+                    Brand Design & Graphics
+                  </span>
+                </div>
+                <div className="w-[17.5rem] py-[2rem]">
+                  <p className="text-[1rem] font-normal leading-6 text-upsel-white">
+                    We understand that brand identity is a critical component of
+                    any business, and that's why we focus on delivering brand
+                    and graphic design solutions that are memorable, effective,
+                    and distinctive.
+                  </p>
+                </div>
+                <div className="flex justify-end w-[17.5rem] md:w-full">
+                  <button
+                    onClick={() => toggleAccordion(2)}
+                    className="rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem]"
+                  >
+                    <img
+                      src={arrow_down}
+                      alt="arrow-down"
+                      className="lg:hidden"
+                    />
+                    <img
+                      src={arrow_down_2}
+                      alt="arrow-down"
+                      className="hidden lg:block"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
+
             <div
-              className={`card  mt-[2.55rem] flex gap-3 ${
+              className={`card  mt-[2.55rem] flex flex-wrap justify-center  gap-3  ${
                 isItemActive(2) ? "block" : "hidden"
               }`}
             >
@@ -183,7 +189,7 @@ export const DetailSection = () => {
 
           <div
             className={` lg:mt-[14.65rem] md:mt-[5rem] mt-[7rem] order-4 ${
-              isItemActive(2) ? "lg:mt-[-30rem]" : ""
+              isItemActive(2) ? "lg:mt-[-32rem]" : ""
             }`}
           >
             <div className="lg:flex lg:justify-end">

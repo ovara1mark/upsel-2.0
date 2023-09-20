@@ -3,7 +3,7 @@ import search from "../../../assets/Search.svg";
 import { frequent } from "./questions";
 import arrowDown from "../../../assets/arrow-down.svg";
 import arrowUp from "../../../assets/arrow-up.svg";
-import faqStar from "../../../assets/faq-star.svg";
+import faqStar from "../../../assets/faq_star.svg";
 import faqHexagon from "../../../assets/faq-hexagon.svg";
 
 export const FaqSection = () => {
