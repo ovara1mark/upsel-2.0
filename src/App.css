@@ -66,6 +66,10 @@
   transform: rotateY(180deg);
 }
 
+.flip-left {
+  transform: scaleX(-1);
+}
+
 /* choose section */
 
 .bg-choose {

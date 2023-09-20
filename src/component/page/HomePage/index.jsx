@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Choose, HeroSection, More, Navbar } from "../../molecule";
+import { Choose, HeroSection, More, Navbar } from "../../molecule";
 import {
   Footer,
   AboutSection,
