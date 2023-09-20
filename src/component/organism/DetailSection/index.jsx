@@ -28,7 +28,7 @@ export const DetailSection = () => {
               isItemActive(0) ? "lg:pt-[20.65rem]" : ""
             } ${
               isItemActive(1)
-                ? "lg:mt-[-23rem] order-2 lg:flex lg:justify-end"
+                ? "lg:mt-[-28rem] order-2 lg:flex lg:justify-end"
                 : ""
             }
              `}
@@ -82,7 +82,7 @@ export const DetailSection = () => {
 
           <div
             className={` lg:mt-[20.65rem] md:mt-[5rem] mt-[7rem] ${
-              isItemActive(0) ? "lg:mt-[-23rem]" : ""
+              isItemActive(0) ? "lg:mt-[-28rem]" : ""
             } ${isItemActive(1) ? "lg:mt-[23rem] order-1" : ""}`}
           >
             <div
