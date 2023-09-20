@@ -22,13 +22,13 @@ export const DetailSection = () => {
   return (
     <>
       <section className="pb-[5rem] md:pb-[32rem]">
-        <div className="flex flex-col items-center md:block lg:grid lg:grid-cols-2 md:gap-4 md:px-[2.5rem] px-[1rem] lg:px-[10rem]">
+        <div className="flex flex-col overflow-hidden items-center md:block lg:grid lg:grid-cols-2 md:gap-4 md:px-[2.5rem] px-[1rem] lg:px-[4rem] xl:px-[10rem]">
           <div
-            className={`lg:mt-[5rem]  md:mt-[5rem] lg:block md:flex md:justify-center mt-[7rem]  ${
+            className={`lg:mt-[5rem]  md:mt-[5rem] lg:block md:flex md:flex-col md:items-center border  mt-[7rem]  ${
               isItemActive(0) ? "lg:pt-[20.65rem]" : ""
             } ${
               isItemActive(1)
-                ? "lg:mt-[-28rem] order-2 lg:flex lg:justify-end"
+                ? "lg:mt-[-30rem] order-2 lg:flex lg:justify-end"
                 : ""
             }
              `}
@@ -72,7 +72,7 @@ export const DetailSection = () => {
                   : "hidden transition ease-in-out delay-150"
               }`}
             >
-              <div className="flex gap-3 ">
+              <div className="lg:flex lg:gap-3 grid  lg:w-full">
                 <Card />
                 <Card />
                 <Card />
@@ -82,7 +82,7 @@ export const DetailSection = () => {
 
           <div
             className={` lg:mt-[20.65rem] md:mt-[5rem] mt-[7rem] ${
-              isItemActive(0) ? "lg:mt-[-28rem]" : ""
+              isItemActive(0) ? "lg:mt-[-30rem]" : ""
             } ${isItemActive(1) ? "lg:mt-[23rem] order-1" : ""}`}
           >
             <div
@@ -181,7 +181,11 @@ export const DetailSection = () => {
             </div>
           </div>
 
-          <div className={` lg:mt-[14.65rem] md:mt-[5rem] mt-[7rem] order-4`}>
+          <div
+            className={` lg:mt-[14.65rem] md:mt-[5rem] mt-[7rem] order-4 ${
+              isItemActive(2) ? "lg:mt-[-30rem]" : ""
+            }`}
+          >
             <div className="lg:flex lg:justify-end">
               <div className="md:w-[20.75rem]">
                 <span className="text-[2.5rem] font-bold text-upsel-white">
@@ -219,7 +223,6 @@ export const DetailSection = () => {
                 isItemActive(3) ? "block" : "hidden"
               }`}
             >
-              <Card />
               <Card />
             </div>
           </div>
