@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import arrow_down from "../../../assets/arrow-down-1.svg";
 import arrow_down_2 from "../../../assets/arrow-down-2.svg";
+import arrow_up_2 from "../../../assets/arrow-up-2.svg";
 import { Card } from "../../molecule";
 export const DetailSection = () => {
   const [activeItem, setActiveItem] = useState(null);
@@ -50,19 +51,25 @@ export const DetailSection = () => {
                 </div>
                 <div className="flex justify-end w-[17.5rem] md:w-full">
                   <button
-                    className="rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem] "
+                    className={`rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem] ${
+                      isItemActive(0) ? "bg-upsel-light-purple" : ""
+                    } `}
                     onClick={() => toggleAccordion(0)}
                   >
-                    <img
-                      src={arrow_down}
-                      alt="arrow-down"
-                      className="lg:hidden"
-                    />
-                    <img
-                      src={arrow_down_2}
-                      alt="arrow-down"
-                      className="hidden lg:block"
-                    />
+                    {isItemActive(0) ? (
+                      <img src={arrow_up_2} alt="arrow up" />
+                    ) : (
+                      //   <img
+                      //   src={arrow_down}
+                      //   alt="arrow-down"
+                      //   className="lg:hidden"
+                      // />
+                      <img
+                        src={arrow_down_2}
+                        alt="arrow-down"
+                        className="hidden lg:block"
+                      />
+                    )}
                   </button>
                 </div>
               </div>
@@ -110,19 +117,25 @@ export const DetailSection = () => {
                 </div>
                 <div className="flex justify-end w-[17.5rem] md:w-full">
                   <button
-                    className="rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem] "
+                    className={`rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem] ${
+                      isItemActive(1) ? "bg-upsel-light-purple" : ""
+                    }`}
                     onClick={() => toggleAccordion(1)}
                   >
-                    <img
-                      src={arrow_down}
-                      alt="arrow-down"
-                      className="lg:hidden"
-                    />
-                    <img
-                      src={arrow_down_2}
-                      alt="arrow-down"
-                      className="hidden lg:block"
-                    />
+                    {isItemActive(1) ? (
+                      <img src={arrow_up_2} alt="arrow up" />
+                    ) : (
+                      //   <img
+                      //   src={arrow_down}
+                      //   alt="arrow-down"
+                      //   className="lg:hidden"
+                      // />
+                      <img
+                        src={arrow_down_2}
+                        alt="arrow-down"
+                        className="hidden lg:block"
+                      />
+                    )}
                   </button>
                 </div>
               </div>
@@ -160,18 +173,24 @@ export const DetailSection = () => {
                 <div className="flex justify-end w-[17.5rem] md:w-full">
                   <button
                     onClick={() => toggleAccordion(2)}
-                    className="rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem]"
+                    className={`rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem] ${
+                      isItemActive(2) ? "bg-upsel-light-purple" : ""
+                    }`}
                   >
-                    <img
-                      src={arrow_down}
-                      alt="arrow-down"
-                      className="lg:hidden"
-                    />
-                    <img
-                      src={arrow_down_2}
-                      alt="arrow-down"
-                      className="hidden lg:block"
-                    />
+                    {isItemActive(2) ? (
+                      <img src={arrow_up_2} alt="arrow up" />
+                    ) : (
+                      //   <img
+                      //   src={arrow_down}
+                      //   alt="arrow-down"
+                      //   className="lg:hidden"
+                      // />
+                      <img
+                        src={arrow_down_2}
+                        alt="arrow-down"
+                        className="hidden lg:block"
+                      />
+                    )}
                   </button>
                 </div>
               </div>
@@ -207,18 +226,24 @@ export const DetailSection = () => {
                 <div className="flex justify-end w-[17.5rem] md:w-full">
                   <button
                     onClick={() => toggleAccordion(3)}
-                    className="rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem]"
+                    className={`rounded-full flex justify-center items-center bg-upsel-grey w-[5rem] h-[5rem] ${
+                      isItemActive(3) ? "bg-upsel-light-purple" : ""
+                    }`}
                   >
-                    <img
-                      src={arrow_down}
-                      alt="arrow-down"
-                      className="lg:hidden"
-                    />
-                    <img
-                      src={arrow_down_2}
-                      alt="arrow-down"
-                      className="hidden lg:block"
-                    />
+                    {isItemActive(3) ? (
+                      <img src={arrow_up_2} alt="arrow up" />
+                    ) : (
+                      //   <img
+                      //   src={arrow_down}
+                      //   alt="arrow-down"
+                      //   className="lg:hidden"
+                      // />
+                      <img
+                        src={arrow_down_2}
+                        alt="arrow-down"
+                        className="hidden lg:block"
+                      />
+                    )}
                   </button>
                 </div>
               </div>
