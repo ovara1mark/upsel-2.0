@@ -90,7 +90,15 @@ export const HeroSection = () => {
                 </div>
                 <div className="flex justify-end mt-[-4rem]">
                   <button className="cursor-pointer rounded-[3.25rem] bg-upsel-grey w-[5rem] h-[5rem] flex justify-center items-center px-[1rem] py-[.5rem]">
-                    <img src={button_arrow} alt="arrow" />
+                    <Link
+                      to="aboutus"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                    >
+                      <img src={button_arrow} alt="arrow" />
+                    </Link>
                   </button>
                 </div>
               </div>

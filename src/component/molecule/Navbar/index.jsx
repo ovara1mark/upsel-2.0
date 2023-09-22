@@ -9,8 +9,17 @@ export const Navbar = () => {
   return (
     <>
       <div className="h-[5.4rem]  lg:h-[7.9rem] bg-upsel-black text-upsel-white lg:px-[6.24rem] lg:pt-[3.125rem] lg:pb-[1.88rem] py-[1.25rem] px-[2.5rem] flex mx-auto justify-between font-normal">
-        <div className="lg:flex lg:justify-start lg:items-center w-[6.5rem]">
-          <img src={logo} alt="logo" />
+        <div className="lg:flex lg:justify-start lg:items-center w-[6.5rem] cursor-pointer">
+          <Link
+            activeClass="active"
+            to="/"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
         <div className="hidden md:flex justify-center items-center">
           <ul className="flex gap-[1.875rem] text-[1.25rem] ">
