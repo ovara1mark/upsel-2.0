@@ -1,4 +1,6 @@
 import React from "react";
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 import about_lg from "../../../assets/about-lg.svg";
 import facebook from "../../../assets/facebook.svg";
 import twitter from "../../../assets/twitter.svg";
@@ -21,7 +23,17 @@ export const About = () => {
           </p>
         </div>
         <div className="md:w-[25.2rem] w-[17rem] flex flex-col items-end mb-[2.5rem]">
-          <Button>Hire Us</Button>
+          <Button>
+            <Link
+              to="contactus"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Hire Us
+            </Link>
+          </Button>
         </div>
         <div className="md:w-[25.2rem] w-[17rem] flex justify-center">
           <div className="flex gap-[2rem] w-[11.4rem] h-[1.5rem]">

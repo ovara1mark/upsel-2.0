@@ -21,7 +21,7 @@ export const DetailSection = () => {
 
   return (
     <>
-      <section className="pb-[5rem] md:pb-[32rem]">
+      <section className="pb-[5rem] md:pb-[32rem]" id="Service">
         <div className="flex flex-col overflow-hidden items-center md:block lg:grid lg:grid-cols-2 md:gap-4 md:px-[2.5rem] px-[1rem] lg:px-[4rem] xl:px-[10rem]">
           <div
             className={`lg:mt-[5rem]  md:mt-[5rem] lg:block md:flex md:flex-col md:items-center  mt-[7rem]  ${

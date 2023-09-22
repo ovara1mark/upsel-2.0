@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 import menu from "../../../assets/menu.svg";
 import logo from "../../../assets/logo.svg";
 import close from "../../../assets/close.png";
@@ -13,22 +15,72 @@ export const Navbar = () => {
         <div className="hidden md:flex justify-center items-center">
           <ul className="flex gap-[1.875rem] text-[1.25rem] ">
             <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
-              About Us
+              <Link
+                activeClass="active"
+                to="aboutus"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="navbanner-text"
+              >
+                About Us
+              </Link>
             </li>
             <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
-              Services
+              <Link
+                activeClass="active"
+                to="Service"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="navbanner-text"
+              >
+                Services
+              </Link>
             </li>
             <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
-              Projects
+              <Link
+                activeClass="active"
+                to="Projects"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="navbanner-text"
+              >
+                Projects
+              </Link>
             </li>
             <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
-              FAQ
+              <Link
+                activeClass="active"
+                to="faq"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="navbanner-text"
+              >
+                FAQ
+              </Link>
             </li>
           </ul>
         </div>
         <div>
           <button className="hidden md:block text-[1rem] rounded-[0.25rem] bg-upsel-light-purple px-[1.5rem] py-[0.75rem] transition ease-in-out delay-150 hover:bg-upsel-purple">
-            Contact Us
+            <Link
+              activeClass="active"
+              to="contactus"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="navbanner-text"
+            >
+              Contact Us
+            </Link>
           </button>
           <div
             className="pt-3 cursor-pointer md:hidden"
@@ -55,24 +107,60 @@ export const Navbar = () => {
       >
         <ul className="h-screen md:h-auto items-center justify-center md:flex ">
           <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
-            <a href="#about" onClick={() => setNavbar(!navbar)}>
+            <Link
+              activeClass="active"
+              to="aboutus"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="navbanner-text"
+              onClick={() => setNavbar(!navbar)}
+            >
               About Us
-            </a>
+            </Link>
           </li>
           <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
-            <a href="#services" onClick={() => setNavbar(!navbar)}>
+            <Link
+              activeClass="active"
+              to="Service"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="navbanner-text"
+              onClick={() => setNavbar(!navbar)}
+            >
               Services
-            </a>
+            </Link>
           </li>
           <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
-            <a href="#projects" onClick={() => setNavbar(!navbar)}>
+            <Link
+              activeClass="active"
+              to="Projects"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="navbanner-text"
+              onClick={() => setNavbar(!navbar)}
+            >
               Projects
-            </a>
+            </Link>
           </li>
           <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
-            <a href="#faq" onClick={() => setNavbar(!navbar)}>
+            <Link
+              activeClass="active"
+              to="faq"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="navbanner-text"
+              onClick={() => setNavbar(!navbar)}
+            >
               FAQ
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -13,7 +13,11 @@
 
 /* Gradient Background */
 .gradient-bg {
-  background: linear-gradient(180deg, #7000ff 0%, #1F1F1F 87.5%);
+  background: linear-gradient(180deg, #7000ff 0%, #1f1f1f 87.5%);
+}
+/* navbar */
+.active {
+  color: #372772;
 }
 
 /* about section */
