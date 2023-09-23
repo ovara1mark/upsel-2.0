@@ -11,16 +11,16 @@ export const ContactForm = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_bs7fyya",
-        "template_uch72uw",
+        `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`,
+        `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`,
         form.current,
-        "Z4CcpWNaUXbI0z-vQ"
+        `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`
       );
       console.log(result);
       e.target.reset();
       setSubmit(true);
     } catch (error) {
-      // console.log(error);
+      console.log(error);
     }
   };
   const closeThankyou = () => {
@@ -135,10 +135,13 @@ export const ContactForm = () => {
             <div className=" mb-[10px] md:mb-[30px] ">
               <label className="text-upsel-white text-[12px] pl-[5px] pb-[5px] md:text-[1rem] lg-text-[1.125rem] ">
                 Phone Number
+                <span className="italic text-[12px] block">
+                  please add your country code{" "}
+                </span>
               </label>
               <input
                 className="w-full outline-upsel-purple text-[14px] p-[14px] rounded-lg placeholder:italic "
-                type="text"
+                type="number"
                 placeholder="Phone Number"
                 name="tel_number"
                 required
@@ -159,11 +162,12 @@ export const ContactForm = () => {
             </div>
             <div className=" mb-[10px] md:mb-[30px] ">
               <label className="text-upsel-white text-[12px] pl-[5px] pb-[5px] md:text-[1rem] lg-text-[1.125rem] ">
-                What is your budget for the project?
+                What is your budget for the project?{" "}
+                <span className="italic">($)</span>
               </label>
               <input
                 className="w-full outline-upsel-purple text-[14px] p-[14px] rounded-lg placeholder:italic "
-                type="text"
+                type="number"
                 placeholder="Enter your budget"
                 name="budget"
                 autoComplete="off"

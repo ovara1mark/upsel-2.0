@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.0",
