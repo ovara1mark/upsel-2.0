@@ -149,6 +149,22 @@
     background: rgba(255, 255, 255, 0.65);
     transform: rotate(-32.61deg);
   }
+
+  /* details section */
+  .first_order {
+    position: relative;
+    top: -15rem;
+  }
+
+  .second_order {
+    position: relative;
+    top: -30rem;
+  }
+
+  .third_order {
+    position: relative;
+    top: -20rem;
+  }
 }
 
 @media screen and (min-width: 1280px) {

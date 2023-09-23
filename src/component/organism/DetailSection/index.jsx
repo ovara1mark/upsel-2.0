@@ -29,7 +29,7 @@ export const DetailSection = () => {
               isItemActive(0) ? "lg:pt-[14.65rem]" : ""
             } ${
               isItemActive(1)
-                ? "lg:mt-[-42rem] lg:order-2 lg:flex lg:justify-end"
+                ? "first_order lg:order-2 lg:flex lg:justify-end"
                 : ""
             }
              `}
@@ -94,7 +94,7 @@ export const DetailSection = () => {
 
           <div
             className={` lg:mt-[20.65rem] md:mt-[5rem] mt-[7rem] ${
-              isItemActive(0) ? "lg:mt-[-35rem]" : ""
+              isItemActive(0) ? "second_order" : ""
             } ${isItemActive(1) ? "lg:mt-[10.65rem] lg:order-1" : ""}`}
           >
             <div
@@ -184,16 +184,18 @@ export const DetailSection = () => {
                     {isItemActive(2) ? (
                       <img src={arrow_up_2} alt="arrow up" />
                     ) : (
-                      //   <img
-                      //   src={arrow_down}
-                      //   alt="arrow-down"
-                      //   className="lg:hidden"
-                      // />
-                      <img
-                        src={arrow_down_2}
-                        alt="arrow-down"
-                        className="hidden lg:block"
-                      />
+                      <>
+                        <img
+                          src={arrow_down}
+                          alt="arrow-down"
+                          className="lg:hidden"
+                        />
+                        <img
+                          src={arrow_down_2}
+                          alt="arrow-down"
+                          className="hidden lg:block"
+                        />
+                      </>
                     )}
                   </button>
                 </div>
@@ -212,7 +214,7 @@ export const DetailSection = () => {
 
           <div
             className={` lg:mt-[14.65rem] md:mt-[5rem] mt-[7rem] order-4 ${
-              isItemActive(2) ? "lg:mt-[-35rem]" : ""
+              isItemActive(2) ? "third_order" : ""
             }`}
           >
             <div className="lg:flex lg:justify-end">
