@@ -59,16 +59,18 @@ export const DetailSection = () => {
                     {isItemActive(0) ? (
                       <img src={arrow_up_2} alt="arrow up" />
                     ) : (
-                      //   <img
-                      //   src={arrow_down}
-                      //   alt="arrow-down"
-                      //   className="lg:hidden"
-                      // />
-                      <img
-                        src={arrow_down_2}
-                        alt="arrow-down"
-                        className="hidden lg:block"
-                      />
+                      <>
+                        <img
+                          src={arrow_down}
+                          alt="arrow-down"
+                          className="lg:hidden"
+                        />
+                        <img
+                          src={arrow_down_2}
+                          alt="arrow-down"
+                          className="hidden lg:block"
+                        />
+                      </>
                     )}
                   </button>
                 </div>
@@ -125,16 +127,18 @@ export const DetailSection = () => {
                     {isItemActive(1) ? (
                       <img src={arrow_up_2} alt="arrow up" />
                     ) : (
-                      //   <img
-                      //   src={arrow_down}
-                      //   alt="arrow-down"
-                      //   className="lg:hidden"
-                      // />
-                      <img
-                        src={arrow_down_2}
-                        alt="arrow-down"
-                        className="hidden lg:block"
-                      />
+                      <>
+                        <img
+                          src={arrow_down}
+                          alt="arrow-down"
+                          className="lg:hidden"
+                        />
+                        <img
+                          src={arrow_down_2}
+                          alt="arrow-down"
+                          className="hidden lg:block"
+                        />
+                      </>
                     )}
                   </button>
                 </div>
@@ -233,16 +237,18 @@ export const DetailSection = () => {
                     {isItemActive(3) ? (
                       <img src={arrow_up_2} alt="arrow up" />
                     ) : (
-                      //   <img
-                      //   src={arrow_down}
-                      //   alt="arrow-down"
-                      //   className="lg:hidden"
-                      // />
-                      <img
-                        src={arrow_down_2}
-                        alt="arrow-down"
-                        className="hidden lg:block"
-                      />
+                      <>
+                        <img
+                          src={arrow_down}
+                          alt="arrow-down"
+                          className="lg:hidden"
+                        />
+                        <img
+                          src={arrow_down_2}
+                          alt="arrow-down"
+                          className="hidden lg:block"
+                        />
+                      </>
                     )}
                   </button>
                 </div>
