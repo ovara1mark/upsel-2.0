@@ -11,12 +11,12 @@ export const ContactForm = () => {
 
     try {
       const result = await emailjs.sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY
       );
-      console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+      console.log(import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY);
       e.target.reset();
       setSubmit(true);
     } catch (error) {
@@ -30,7 +30,7 @@ export const ContactForm = () => {
     <>
       <div className="w-full px-[1.4rem] mt-[37px] lg:w-4/5">
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex flex-wrap gap-x-[7px] gap-y-[30px] whitespace-nowrap w-full md:gap-x-[10px] gap-y-[35px]">
+          <div className="flex flex-wrap gap-x-[7px]  whitespace-nowrap w-full md:gap-x-[10px] gap-y-[35px]">
             <div className="">
               <input
                 className="w-0 peer"
