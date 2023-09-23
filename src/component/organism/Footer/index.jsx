@@ -10,8 +10,8 @@ import { Link } from "react-scroll";
 
 export const Footer = () => {
   return (
-    <section className="flex flex-col justify-center items-center relative bg-upsel-black py-[5rem] overflow-hidden">
-      <ul className="flex flex-wrap gap-[40px] justify-center items-center text-[.85rem] text-upsel-footer-grey md:text-[1.15rem]  lg:text-[1.7rem] ">
+    <section className="flex flex-col justify-center items-center relative bg-[#1F1F1F] py-[5rem] overflow-hidden">
+      <ul className="flex flex-wrap gap-[40px] justify-center items-center text-[.85rem] text-upsel-footer-grey md:text-[1.15rem] gap-[2.35rem] lg:text-[1.7rem] gap-[4.55rem] ">
         <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
           <Link
             activeClass="active"
