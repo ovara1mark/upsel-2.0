@@ -6,6 +6,8 @@ import video_hero11 from "../../../assets/frame11.svg";
 import video_hero12 from "../../../assets/frame12.svg";
 import star_white from "../../../assets/star-white.svg";
 import { Button } from "../../atom";
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 
 export const Speciality = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -101,7 +103,17 @@ export const Speciality = () => {
               </div>
             </div>
             <div className="lg:pt-[2.58rem] md:pt-[4.08rem] pt-[3.43rem] flex justify-end">
-              <Button>Hire Us</Button>
+              <Button>
+                <Link
+                  to="contactus"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  Hire Us
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

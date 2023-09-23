@@ -11,12 +11,12 @@ export const ContactForm = () => {
 
     try {
       const result = await emailjs.sendForm(
-        `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`,
-        `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`,
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       );
-      console.log(result);
+      console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
       e.target.reset();
       setSubmit(true);
     } catch (error) {

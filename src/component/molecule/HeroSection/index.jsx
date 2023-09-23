@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 import yellow from "../../../assets/yellow-lg.png";
 import yellow2 from "../../../assets/yellow-tab.svg";
 import purple from "../../../assets/purple-lg.png";
@@ -88,7 +90,15 @@ export const HeroSection = () => {
                 </div>
                 <div className="flex justify-end mt-[-4rem]">
                   <button className="cursor-pointer rounded-[3.25rem] bg-upsel-grey w-[5rem] h-[5rem] flex justify-center items-center px-[1rem] py-[.5rem]">
-                    <img src={button_arrow} alt="arrow" />
+                    <Link
+                      to="aboutus"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                    >
+                      <img src={button_arrow} alt="arrow" />
+                    </Link>
                   </button>
                 </div>
               </div>
@@ -109,7 +119,18 @@ export const HeroSection = () => {
 
             <div className="text-holder">
               <div className="lg:mt-[2.94rem] md:mt-[1.5rem] mt-[1.89rem] flex justify-end">
-                <Button>Hire Us</Button>
+                <Button>
+                  <Link
+                    to="contactus"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    className="navbanner-text"
+                  >
+                    Hire Us
+                  </Link>
+                </Button>
               </div>
               <div className="hidden lg:mt-[1.94rem] md:mt-[2.69rem] xl:flex xl:justify-between xl:flex-row md:flex md:flex-col">
                 <div className="lg:w-[32rem] md:w-[23.875rem] w-[19.5rem] font-bold text-upsel-white leading-[3.25rem] lg:text-[3rem] md:text-[3rem] text-[2rem]">
@@ -119,7 +140,15 @@ export const HeroSection = () => {
                 </div>
                 <div className="md:flex md:justify-end md:mt-[4rem] xl:mt-0 xl:flex-col xl:justify-end">
                   <button className="cursor-pointer rounded-[3.25rem] bg-upsel-grey w-[5rem] h-[5rem] flex justify-center items-center px-[1rem] py-[.5rem]">
-                    <img src={button_arrow} alt="arrow" />
+                    <Link
+                      to="aboutus"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                    >
+                      <img src={button_arrow} alt="arrow" />
+                    </Link>
                   </button>
                 </div>
               </div>

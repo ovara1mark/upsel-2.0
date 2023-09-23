@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import black_star from "../../../assets/black-star.svg";
 import arrow_right from "../../../assets/arrow-right.svg";
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 
 export const Card = ({ details, text, header }) => {
   const [activeCard, setActiveCard] = useState(false);
@@ -66,7 +68,16 @@ export const Card = ({ details, text, header }) => {
                 </div>
                 <div className="btn mt-[1rem]">
                   <button className="py-[0.5rem] px-[1rem] flex justify-center text-center items-center text-upsel-white bg-upsel-light-purple rounded-[0.25rem] italic md:w-[13.75rem] text-[1rem]  cursor-pointer transition ease-in-out delay-150 hover:bg-upsel-purple">
-                    Grow Your Business Now
+                    <Link
+                      activeClass="active"
+                      to="contactus"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                    >
+                      Grow Your Business Now
+                    </Link>
                   </button>
                 </div>
               </div>
