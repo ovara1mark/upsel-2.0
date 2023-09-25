@@ -22,6 +22,8 @@ export default {
         "upsel-dark-purple": "#141414",
         "upsel-yellow": "#D7C190",
         "upsel-card-black": "#454545",
+        "upsel-blue": "#B3FAFF",
+        "upsel-gold": "#D7C190",
       },
       animation: {
         marquee: "marquee 15s linear infinite",
