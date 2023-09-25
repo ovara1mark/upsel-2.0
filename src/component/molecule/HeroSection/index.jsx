@@ -4,63 +4,13 @@ import { Link } from "react-scroll";
 import yellow from "../../../assets/yellow-lg.png";
 import yellow2 from "../../../assets/yellow-tab.svg";
 import purple from "../../../assets/purple-lg.png";
-import video_hero2 from "../../../assets/Frame1.svg";
-import video_hero from "../../../assets/hero-video-lg.png";
-import video_hero3 from "../../../assets/Frame3.svg";
-import video_hero4 from "../../../assets/Frame4.svg";
-import video_hero5 from "../../../assets/Frame5.svg";
-import video_hero6 from "../../../assets/Frame6.svg";
-import video_hero7 from "../../../assets/Frame7.svg";
+import video_hero2 from "../../../assets/center-2.gif";
 import button_arrow from "../../../assets/Buttons.svg";
 import star from "../../../assets/star.svg";
 import Marquee from "react-fast-marquee";
 import { Button } from "../../atom/Button";
 
 export const HeroSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const featuredImages = [
-    video_hero,
-    video_hero2,
-    video_hero3,
-    video_hero4,
-    video_hero5,
-    video_hero6,
-    video_hero7,
-  ];
-  const slideRef = useRef();
-  let count = 0;
-  let slideInterval;
-  const handleOnNextClick = () => {
-    count = (count + 1) % featuredImages.length;
-    setCurrentIndex(count);
-    slideRef.current.classList.add("fade-anim");
-  };
-
-  const removeAnimation = () => {
-    slideRef.current.classList.remove("fade-anim");
-  };
-
-  useEffect(() => {
-    startSlider();
-    slideRef.current.addEventListener("animationend", removeAnimation);
-    slideRef.current.addEventListener("mouseenter", pauseSlider);
-    slideRef.current.addEventListener("mouseleave", startSlider);
-
-    return () => {
-      clearInterval(slideInterval);
-    };
-  }, []);
-
-  const startSlider = () => {
-    slideInterval = setInterval(() => {
-      handleOnNextClick();
-    }, 1000);
-  };
-
-  const pauseSlider = () => {
-    clearInterval(slideInterval);
-  };
-
   return (
     <>
       <section className="bg-upsel-black lg:py-[2.5rem] md:pt-[0.75rem] md:pb-[6.5rem] pb-[4.25rem] hero-section relative overflow-hidden">
@@ -106,10 +56,10 @@ export const HeroSection = () => {
           </div>
           <div className="hero-right">
             <div className=" md:flex md:justify-end">
-              <div ref={slideRef} className="transition ease-in-out delay-50">
+              <div className="transition ease-in-out delay-50">
                 <div className="xl:w-[45.75rem] xl:h-[22.69rem] rounded-[0.75rem] md:w-[25.6rem] md:h-[17rem] aspect-w-16 h-[14rem]">
                   <img
-                    src={featuredImages[currentIndex]}
+                    src={video_hero2}
                     alt="video"
                     className="object-cover rounded-[0.75rem]"
                   />
