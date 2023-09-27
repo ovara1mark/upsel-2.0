@@ -3,6 +3,8 @@ import arrow_down from "../../../assets/arrow-down-1.svg";
 import arrow_down_2 from "../../../assets/arrow-down-2.svg";
 import arrow_up_2 from "../../../assets/arrow-up-2.svg";
 import { Card } from "../../molecule";
+import { detail } from "./detail";
+
 export const DetailSection = () => {
   const [activeItem, setActiveItem] = useState(null);
 
@@ -85,7 +87,11 @@ export const DetailSection = () => {
               }`}
             >
               <div className="flex flex-wrap lg:flex-nowrap lg:justify-start justify-center  gap-3">
-                <Card />
+                <Card
+                  header={detail.cardine.levelone.header}
+                  details={detail.cardine.levelone.details}
+                  text={detail.cardine.levelone.text}
+                />
                 <Card />
                 <Card />
               </div>

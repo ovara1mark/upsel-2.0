@@ -10,6 +10,11 @@ export const Card = ({ details, text, header }) => {
   const handleFlip = () => {
     setActiveCard(!activeCard);
   };
+
+  const holder = [details];
+
+  console.log(holder);
+
   return (
     <>
       <div className="">
@@ -34,16 +39,20 @@ export const Card = ({ details, text, header }) => {
               </div>
             </div>
             <div>
-              <div className="flex gap-2 pb-[1rem]">
-                <div>
-                  <img src={black_star} alt="black star" />
-                </div>
-                <div>
-                  <span className="text-[1rem] text-upsel-card-black">
-                    {details}
-                  </span>
-                </div>
-              </div>
+              {holder.map((elem, index) => {
+                return (
+                  <div key={index} className="flex gap-2 pb-[1rem]">
+                    <div>
+                      <img src={black_star} alt="black star" />
+                    </div>
+                    <div>
+                      <span className="text-[1rem] text-upsel-card-black">
+                        {elem}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

@@ -122,7 +122,7 @@ export const Navbar = () => {
         }`}
       >
         <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-          <li className="pb-2 text-xl text-white py-6 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="cursor-pointer pb-2 text-xl text-white py-6 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
             <Link
               activeClass="active"
               to="aboutus"
@@ -136,7 +136,7 @@ export const Navbar = () => {
               About Us
             </Link>
           </li>
-          <li className="pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
             <Link
               activeClass="active"
               to="Service"
@@ -150,7 +150,7 @@ export const Navbar = () => {
               Services
             </Link>
           </li>
-          <li className="pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
             <Link
               activeClass="active"
               to="Projects"
@@ -164,7 +164,7 @@ export const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
             <Link
               activeClass="active"
               to="faq"
