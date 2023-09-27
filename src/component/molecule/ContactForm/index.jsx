@@ -16,11 +16,10 @@ export const ContactForm = () => {
         form.current,
         import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY
       );
-      console.log(import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY);
       e.target.reset();
       setSubmit(true);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
   const closeThankyou = () => {

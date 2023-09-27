@@ -104,6 +104,7 @@
     background: rgba(255, 255, 255, 0.65);
     transform: rotate(-45.288deg);
   }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -116,6 +117,10 @@
       rgba(0, 0, 0, 1) 46%
     );
     background-color: black;
+  }
+  /* navbar */
+  .active {
+    color: white;
   }
 }
 
@@ -169,3 +174,4 @@
 
 @media screen and (min-width: 1280px) {
 }
+
