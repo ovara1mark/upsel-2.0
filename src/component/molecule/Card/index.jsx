@@ -22,7 +22,7 @@ export const Card = ({ detail, text, header }) => {
         >
           {/* front */}
           <div className="front w-[19.5rem] h-[28.125rem] bg-upsel-yellow flex flex-col justify-between py-[2rem] px-[1rem] rounded-[0.75rem]">
-            <div className="flex">
+            <div className="flex justify-between">
               <div className="w-13rem">
                 <span className="text-[2rem] text-upsel-black font-bold">
                   {header}
