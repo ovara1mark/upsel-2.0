@@ -4,16 +4,12 @@ import arrow_right from "../../../assets/arrow-right.svg";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 
-export const Card = ({ details, text, header }) => {
+export const Card = ({ detail, text, header }) => {
   const [activeCard, setActiveCard] = useState(false);
 
   const handleFlip = () => {
     setActiveCard(!activeCard);
   };
-
-  const holder = [details];
-
-  console.log(holder);
 
   return (
     <>
@@ -39,7 +35,7 @@ export const Card = ({ details, text, header }) => {
               </div>
             </div>
             <div>
-              {holder.map((elem, index) => {
+              {detail?.map((elem, index) => {
                 return (
                   <div key={index} className="flex gap-2 pb-[1rem]">
                     <div>

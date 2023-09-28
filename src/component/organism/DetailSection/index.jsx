@@ -22,6 +22,9 @@ export const DetailSection = () => {
     return activeItem === index;
   };
 
+  const holder = {
+    details: ["web", "mobile"],
+  };
   return (
     <>
       <section className="pb-[5rem] md:pb-[32rem]" id="Service">
@@ -89,11 +92,19 @@ export const DetailSection = () => {
               <div className="flex flex-wrap lg:flex-nowrap lg:justify-start justify-center  gap-3">
                 <Card
                   header={detail.cardine.levelone.header}
-                  details={detail.cardine.levelone.details}
+                  detail={detail.cardine.levelone.details}
                   text={detail.cardine.levelone.text}
                 />
-                <Card />
-                <Card />
+                <Card
+                  header={detail.cardine.leveltwo.header}
+                  detail={detail.cardine.leveltwo.details}
+                  text={detail.cardine.leveltwo.text}
+                />
+                <Card
+                  header={detail.cardine.levelthree.header}
+                  detail={detail.cardine.levelthree.details}
+                  text={detail.cardine.levelthree.text}
+                />
               </div>
             </div>
           </div>
@@ -156,9 +167,21 @@ export const DetailSection = () => {
                 isItemActive(1) ? "block" : "hidden"
               } `}
             >
-              <Card />
-              <Card />
-              <Card />
+              <Card
+                header={detail.cardini.levelone.header}
+                detail={detail.cardini.levelone.details}
+                text={detail.cardini.levelone.text}
+              />
+              <Card
+                header={detail.cardini.leveltwo.header}
+                detail={detail.cardini.leveltwo.details}
+                text={detail.cardini.leveltwo.text}
+              />
+              <Card
+                header={detail.cardini.levelthree.header}
+                detail={detail.cardini.levelthree.details}
+                text={detail.cardini.levelthree.text}
+              />
             </div>
           </div>
 
@@ -213,8 +236,16 @@ export const DetailSection = () => {
                 isItemActive(2) ? "block" : "hidden"
               }`}
             >
-              <Card />
-              <Card />
+              <Card
+                header={detail.cardinie.levelone.header}
+                detail={detail.cardinie.levelone.details}
+                text={detail.cardinie.levelone.text}
+              />
+              <Card
+                header={detail.cardini.leveltwo.header}
+                detail={detail.cardini.leveltwo.details}
+                text={detail.cardini.leveltwo.text}
+              />
             </div>
           </div>
 
@@ -268,7 +299,11 @@ export const DetailSection = () => {
                 isItemActive(3) ? "block" : "hidden"
               }`}
             >
-              <Card />
+              <Card
+                header={detail.cardiny.levelone.header}
+                detail={detail.cardiny.levelone.details}
+                text={detail.cardiny.levelone.text}
+              />
             </div>
           </div>
         </div>
