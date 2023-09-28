@@ -20,6 +20,9 @@
   color: #372772;
 }
 
+button {
+  outline: none;
+}
 /* about section */
 .about {
   /* background-image: url("./assets/about.svg"); */
@@ -104,7 +107,6 @@
     background: rgba(255, 255, 255, 0.65);
     transform: rotate(-45.288deg);
   }
-  
 }
 
 @media screen and (max-width: 600px) {
@@ -174,4 +176,3 @@
 
 @media screen and (min-width: 1280px) {
 }
-

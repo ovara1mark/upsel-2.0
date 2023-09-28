@@ -17,7 +17,7 @@ export const HomePage = () => {
     // Simulate loading by using a timeout
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // Set the duration as needed
+    }, 4000); // Set the duration as needed
   }, []);
   return (
     <>
