@@ -54,7 +54,7 @@ export const Card = ({ detail, text, header }) => {
 
           {/* back */}
           <div className="absolute top-0 back w-[19.5rem] h-[28.125rem] bg-white flex flex-col justify-between py-[2rem] px-[1rem] rounded-[0.75rem]">
-            <div className="flex">
+            <div className="flex justify-between">
               <div className="w-13rem">
                 <span className="text-[2rem] text-upsel-black font-bold">
                   {header}
