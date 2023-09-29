@@ -6,7 +6,7 @@ export const ContactUs = () => {
     <>
       <section
         id="contactus"
-        className="flex flex-col justify-center items-left gradient-bg py-[3.125rem] lg:py-[9.625rem] lg:pl-[9rem] lg:bg-contact-us-bg lg:bg-cover "
+        className="flex flex-col justify-center items-left bg-cover py-[7.125rem] md:py-[9.125rem] bg-contact-us-mob-bg md:bg-contact-us-tablet-bg lg:py-[9.625rem] lg:pl-[9rem] lg:bg-contact-us-bg "
       >
         <div className="w-full px-[1.4rem] lg:w-3/5">
           <h2 className="font-bold tracking-wide text-upsel-white text-[2rem] leading-[38px] md:text-[2.875rem] lg:text-[6rem] lg:leading-[112px] ">

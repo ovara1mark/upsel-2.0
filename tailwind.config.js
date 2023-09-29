@@ -5,6 +5,8 @@ export default {
     extend: {
       backgroundImage: {
         "contact-us-bg": "url('./assets/Contact us desktop-bg.png')",
+        "contact-us-tablet-bg": "url('./assets/Contact us Tablet-bg.png')",
+        "contact-us-mob-bg": "url('./assets/Contact us-bg.png')",
       },
       colors: {
         "upsel-black": "#000000",
