@@ -38,7 +38,10 @@ export const About = () => {
         <div className="md:w-[25.2rem] w-[17rem] flex justify-center">
           <div className="flex gap-[2rem] w-[11.4rem] h-[1.5rem]">
             <div>
-              <a href="https://linkedin.com/in/weareupsel" target="_blank">
+              <a
+                href="https://www.linkedin.com/company/weareupsel"
+                target="_blank"
+              >
                 <img src={linkedin} alt="upsel linkedin" />
               </a>
             </div>

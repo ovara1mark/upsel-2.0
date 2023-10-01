@@ -77,6 +77,10 @@ button {
   transform: scaleX(-1);
 }
 
+.flip-down {
+  transform: scaleY(-1);
+}
+
 /* choose section */
 
 .bg-choose {

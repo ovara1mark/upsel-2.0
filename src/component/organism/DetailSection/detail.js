@@ -41,7 +41,7 @@ export const detail = {
       text: "We understand that brand identity is a critical component of any business, and that's why we focus on delivering branding solutions that are memorable, effective, and distinctive.Take their brand identity to the next level and establish a strong brand presence in their industry.",
     },
     leveltwo: {
-      header: "Graphics Design",
+      header: "Brand identity Design",
       details: ["Bulletins design", "Fliers design", "Magazine design"],
       text: "Our Graphic design process involves working closely with our clients to understand their brand objectives, identify their unique selling points, and create a design plan that aligns with their vision.",
     },
