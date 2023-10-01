@@ -40,13 +40,6 @@ button {
   background-color: black;
 }
 
-/* special section */
-.special-section {
-  background-image: url("./assets/circles.svg");
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-}
-
 /* @media screen and (max-width: 360px) {
   .btn-down {
     width: 3rem;
@@ -152,6 +145,13 @@ button {
       rgba(176, 166, 222, 0.582) 19%,
       rgba(179, 250, 255, 0) 25%
     );
+  }
+
+  /* special section */
+  .special-section {
+    background-image: url("./assets/circles.svg");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
   }
 }
 
