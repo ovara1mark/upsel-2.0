@@ -118,10 +118,10 @@ export const Footer = () => {
             +234-818-6866-200
           </p>
         </a>
-        <a href="mailto:upselgroups@gmail.com" target="_blank">
+        <a href="mailto:upselgroup@gmail.com" target="_blank">
           {" "}
           <p className=" text-[1.1rem] lg:text-[1.5rem] mt-1">
-            upselgroups@gmail.com
+            upselgroup@gmail.com
           </p>
         </a>
       </div>
