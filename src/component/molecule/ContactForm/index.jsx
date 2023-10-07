@@ -32,7 +32,7 @@ export const ContactForm = () => {
           <div className="flex flex-wrap gap-x-[7px]  whitespace-nowrap w-full md:gap-x-[10px] gap-y-[35px]">
             <div className="">
               <input
-                className="w-0 peer"
+                className="w-0 hidden peer"
                 type="checkbox"
                 name="checkboxes"
                 id="web-design"
@@ -47,7 +47,7 @@ export const ContactForm = () => {
             </div>
             <div className="">
               <input
-                className="w-0 peer"
+                className="w-0 hidden peer"
                 type="checkbox"
                 name="checkboxes"
                 id="web-development"
@@ -62,7 +62,7 @@ export const ContactForm = () => {
             </div>
             <div className="">
               <input
-                className="w-0 peer"
+                className="w-0 hidden peer"
                 type="checkbox"
                 name="checkboxes"
                 id="branding"
@@ -77,7 +77,7 @@ export const ContactForm = () => {
             </div>
             <div className="">
               <input
-                className="w-0 peer"
+                className="w-0 hidden peer"
                 type="checkbox"
                 name="checkboxes"
                 id="marketing"
@@ -92,7 +92,7 @@ export const ContactForm = () => {
             </div>
             <div className="">
               <input
-                className="w-0 peer"
+                className="w-0 hidden peer"
                 type="checkbox"
                 name="checkboxes"
                 id="others"
