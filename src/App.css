@@ -40,13 +40,6 @@ button {
   background-color: black;
 }
 
-/* special section */
-.special-section {
-  background-image: url("./assets/circles.svg");
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-}
-
 /* @media screen and (max-width: 360px) {
   .btn-down {
     width: 3rem;
@@ -77,6 +70,10 @@ button {
   transform: scaleX(-1);
 }
 
+.flip-down {
+  transform: scaleY(-1);
+}
+
 /* choose section */
 
 .bg-choose {
@@ -102,10 +99,24 @@ button {
   );
 }
 
+/* special section */
+.special-section {
+  background-image: url("./assets/circle-2.svg");
+  background-position: 0% 65%;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 500px) {
   .banner {
     background: rgba(255, 255, 255, 0.65);
     transform: rotate(-45.288deg);
+  }
+
+  /* special section */
+  .special-section {
+    background-image: url("./assets/circles.svg");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -148,6 +159,13 @@ button {
       rgba(176, 166, 222, 0.582) 19%,
       rgba(179, 250, 255, 0) 25%
     );
+  }
+
+  /* special section */
+  .special-section {
+    background-image: url("./assets/circles.svg");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
   }
 }
 

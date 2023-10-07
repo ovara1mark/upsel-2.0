@@ -11,7 +11,7 @@ import { Link } from "react-scroll";
 export const Footer = () => {
   return (
     <section className="flex flex-col justify-center items-center relative bg-[#1F1F1F] py-[5rem] overflow-hidden">
-      <ul className="flex flex-wrap gap-[40px] justify-center items-center text-[.85rem] text-upsel-footer-grey md:text-[1.15rem] gap-[2.35rem] lg:text-[1.7rem] gap-[4.55rem] ">
+      <ul className="flex flex-wrap gap-[40px] justify-center items-center text-[.85rem] text-upsel-footer-grey md:text-[1.15rem] lg:text-[1.7rem]">
         <li className="cursor-pointer transition ease-in-out delay-150 hover:text-upsel-light-purple">
           <Link
             activeClass="active"
@@ -108,27 +108,27 @@ export const Footer = () => {
         </div>
       </div>
       <div className="text-upsel-footer-grey text-center ">
-        <a href="tel:+234-000-0000-788">
+        <a href="tel:+234-818-6866-200">
           <p className=" text-[0.87rem] lg:text-[1.1rem] mt-1">
-            +234-000-0000-788
+            +234-818-6866-200
           </p>
         </a>
-        <a href="tel:+234-000-0000-788">
+        <a href="tel:+234-818-6866-200">
           <p className=" text-[0.87rem] lg:text-[1.1rem] mt-1">
-            +234-000-0000-788
+            +234-818-6866-200
           </p>
         </a>
-        <a href="mailto:upseltech@gmail.com" target="_blank">
+        <a href="mailto:upselgroup@gmail.com" target="_blank">
           {" "}
           <p className=" text-[1.1rem] lg:text-[1.5rem] mt-1">
-            upseltech@gmail.com
+            upselgroup@gmail.com
           </p>
         </a>
       </div>
 
       <div className="flex justify-around items-center w-4/5 py-[5rem] lg:w-2/5">
         <div className="cursor-pointer">
-          <a href="https://linkedin.com/in/weareupsel" target="_blank">
+          <a href="https://www.linkedin.com/company/weareupsel" target="_blank">
             <img src={linkedin} alt="upsel linkedin" />
           </a>
         </div>

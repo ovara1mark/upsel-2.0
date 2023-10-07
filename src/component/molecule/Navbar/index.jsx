@@ -101,17 +101,9 @@ export const Navbar = () => {
             onClick={() => setNavbar(!navbar)}
           >
             {navbar ? (
-              // <img src={close} width={20} height={20} alt="close" />
-              <span className="text-[1.4rem]">&#10006;</span>
+              <span className="text-[1.8rem]">&#10006;</span>
             ) : (
-              <span className="text-[1.4rem]">&#9776;</span>
-              // <img
-              //   src={menu}
-              //   alt="menu"
-              //   width={30}
-              //   height={30}
-              //   className="focus:border-none active:border-none"
-              // />
+              <span className="text-[1.8rem]">&#9776;</span>
             )}
           </div>
         </div>
@@ -122,7 +114,7 @@ export const Navbar = () => {
         }`}
       >
         <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-          <li className="cursor-pointer pb-2 text-xl text-white py-6 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="cursor-pointer pb-2 text-xl text-white py-6 md:px-6 text-center  hover:text-upsel-purple">
             <Link
               activeClass="active"
               to="aboutus"
@@ -136,7 +128,7 @@ export const Navbar = () => {
               About Us
             </Link>
           </li>
-          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center hover:text-upsel-purple">
             <Link
               activeClass="active"
               to="Service"
@@ -150,7 +142,7 @@ export const Navbar = () => {
               Services
             </Link>
           </li>
-          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center hover:text-upsel-purple">
             <Link
               activeClass="active"
               to="Projects"
@@ -164,7 +156,7 @@ export const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center  border-b-2 md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="cursor-pointer pb-2 text-xl text-white py-6 px-6 text-center hover:text-upsel-purple ">
             <Link
               activeClass="active"
               to="faq"
@@ -178,7 +170,7 @@ export const Navbar = () => {
               FAQ
             </Link>
           </li>
-          <li className="pb-2 text-xl text-white py-6 px-6 text-center md:border-b-0  hover:bg-upsel-purple  border-upsel-purple md:hover:text-upsel-purple md:hover:bg-transparent">
+          <li className="pb-2 text-xl text-white py-6 px-6 text-center">
             <button className="block text-[1rem] w-full rounded-[0.25rem] bg-upsel-light-purple px-[1.5rem] py-[0.75rem] transition ease-in-out delay-150 hover:bg-upsel-purple">
               <Link
                 activeClass="active"

@@ -62,7 +62,19 @@ export const DetailSection = () => {
                     onClick={() => toggleAccordion(0)}
                   >
                     {isItemActive(0) ? (
-                      <img src={arrow_up_2} alt="arrow up" />
+                      <>
+                        <img
+                          src={arrow_down}
+                          alt="arrow up"
+                          className="lg:hidden flip-down"
+                        />
+
+                        <img
+                          src={arrow_up_2}
+                          alt="arrow up"
+                          className="hidden lg:block "
+                        />
+                      </>
                     ) : (
                       <>
                         <img
@@ -142,7 +154,19 @@ export const DetailSection = () => {
                     onClick={() => toggleAccordion(1)}
                   >
                     {isItemActive(1) ? (
-                      <img src={arrow_up_2} alt="arrow up" />
+                      <>
+                        <img
+                          src={arrow_down}
+                          alt="arrow up"
+                          className="lg:hidden flip-down"
+                        />
+
+                        <img
+                          src={arrow_up_2}
+                          alt="arrow up"
+                          className="hidden lg:block "
+                        />
+                      </>
                     ) : (
                       <>
                         <img
@@ -211,7 +235,19 @@ export const DetailSection = () => {
                     }`}
                   >
                     {isItemActive(2) ? (
-                      <img src={arrow_up_2} alt="arrow up" />
+                      <>
+                        <img
+                          src={arrow_down}
+                          alt="arrow up"
+                          className="lg:hidden flip-down"
+                        />
+
+                        <img
+                          src={arrow_up_2}
+                          alt="arrow up"
+                          className="hidden lg:block "
+                        />
+                      </>
                     ) : (
                       <>
                         <img
@@ -242,9 +278,9 @@ export const DetailSection = () => {
                 text={detail.cardinie.levelone.text}
               />
               <Card
-                header={detail.cardini.leveltwo.header}
-                detail={detail.cardini.leveltwo.details}
-                text={detail.cardini.leveltwo.text}
+                header={detail.cardinie.leveltwo.header}
+                detail={detail.cardinie.leveltwo.details}
+                text={detail.cardinie.leveltwo.text}
               />
             </div>
           </div>
@@ -274,7 +310,19 @@ export const DetailSection = () => {
                     }`}
                   >
                     {isItemActive(3) ? (
-                      <img src={arrow_up_2} alt="arrow up" />
+                      <>
+                        <img
+                          src={arrow_down}
+                          alt="arrow up"
+                          className="lg:hidden flip-down"
+                        />
+
+                        <img
+                          src={arrow_up_2}
+                          alt="arrow up"
+                          className="hidden lg:block "
+                        />
+                      </>
                     ) : (
                       <>
                         <img

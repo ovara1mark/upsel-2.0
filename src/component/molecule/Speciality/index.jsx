@@ -8,7 +8,10 @@ import { Link } from "react-scroll";
 export const Speciality = () => {
   return (
     <>
-      <section className="lg:pt-[8.25rem] lg:px-[5.31rem] md:pt-[6.8rem] md:px-[2.38rem] px-[1.5rem] pt-[7.97rem] special-section">
+      <section
+        id="Projects"
+        className="lg:pt-[8.25rem] lg:px-[5.31rem] md:pt-[6.8rem] md:px-[2.38rem] px-[1.5rem] pt-[7.97rem] special-section"
+      >
         <div className="flex justify-center">
           <div className="">
             <div className="xl:w-[69.375rem] xl:h-[38.125rem] rounded-[0.75rem]">
