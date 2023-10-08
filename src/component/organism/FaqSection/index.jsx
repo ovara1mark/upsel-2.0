@@ -51,7 +51,7 @@ export const FaqSection = () => {
             Any Questions?
           </label>
           <input
-            className="text-[14px] w-full outline-0 placeholder:text-upsel-black placeholder:italic"
+            className="text-[14px] w-[125%] outline-0 placeholder:text-upsel-black placeholder:italic"
             placeholder="Find answers to a question"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
