@@ -6,7 +6,7 @@ import market from "../../../assets/market.svg";
 export const Choose = () => {
   return (
     <>
-      <section className="bg-choose md:mb-[0.75rem] lg:mb-[2.5rem] ">
+      <section className="bg-choose">
         <div className="bg-choose-purple">
           <div className="bg-choose-pink pb-[4.75rem] md:pb-[3rem] lg:pb-[5rem] lg:px-[3.75rem] md:px-[7rem] px-[2.88rem]">
             <div className="flex justify-center pt-[1.175rem] md:pt-[3rem] lg:pb-[4.5rem] md:pb-[3rem] pb-[1.5rem]">
