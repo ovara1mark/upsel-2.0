@@ -42,7 +42,7 @@ export const FaqSection = () => {
       <h3 className="hidden text-[3.5rem]  text-upsel-white font-bold text-center mt-[15%]  lg:block ">
         Frequently asked questions
       </h3>
-      <div className="flex items-center justify-between bg-upsel-white rounded-[8px] w-[90%]  my-[33px] p-[10px] md:w-4/5 lg:mb-[7%] lg:w-3/5">
+      <div className="flex items-center justify-between bg-upsel-white rounded-[8px] w-[90%]  my-[33px] p-[10px] pr-[20px] md:w-4/5 lg:mb-[7%] lg:w-3/5">
         <div className="flex flex-col justify-center gap-[6px] w-3/4 ">
           <label
             className="text-[10px] italic text-upsel-light-grey-"
@@ -51,14 +51,14 @@ export const FaqSection = () => {
             Any Questions?
           </label>
           <input
-            className="text-[14px] w-full outline-0 placeholder:text-upsel-black placeholder:italic"
+            className="text-[14px] w-[125%] outline-0 placeholder:text-upsel-black placeholder:italic"
             placeholder="Find answers to a question"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
           />
         </div>
-        <span className="hidden lg:block cursor-pointer">
-          <img src={search} alt="search icon" />
+        <span className="hidden w-[19px] lg:block cursor-pointer">
+          <img className="w-full" src={search} alt="search icon" />
         </span>
       </div>
       <div className="flex flex-col gap-[6px] justify-center items-center w-full">
