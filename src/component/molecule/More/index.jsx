@@ -15,7 +15,7 @@ export const More = () => {
         <img src={more_2} alt="" className="object-fit w-full  md:hidden" /> */}
         <div>
           <div className="mt-[26.75rem] md:mt-[26.56rem] lg:mt-[24rem] flex justify-center md:flex md:justify-end md:pr-[4.38rem] lg:pr-[14.69rem]">
-            <p className="md:text-[1.125rem] text-[1rem] text-upsel-white md:w-[25.3rem] w-[17.4rem] leading-6">
+            <p className="md:text-[1.125rem] text-[1rem] text-upsel-light-grey md:w-[25.3rem] w-[17.4rem] leading-6">
               Our passion is helping people and companies succeed online. From
               business to marketing and technology, we know our stuff because
               we've been there from the beginning. We're honest, hard-working,
