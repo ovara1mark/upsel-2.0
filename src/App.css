@@ -106,6 +106,13 @@ button {
   background-repeat: no-repeat;
 }
 
+/* more */
+.more {
+  background-image: url("./assets/more-on-us-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (min-width: 500px) {
   .banner {
     background: rgba(255, 255, 255, 0.65);
@@ -167,6 +174,12 @@ button {
     background-position: 0% 100%;
     background-repeat: no-repeat;
   }
+
+  .more {
+    background-image: url("./assets/more-on-us-tab.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -189,6 +202,13 @@ button {
   .third_order {
     position: relative;
     top: -20rem;
+  }
+
+  .more {
+    background-image: url("./assets/more-on-us-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
   }
 }
 

@@ -65,6 +65,8 @@ export const Choose = () => {
           </div>
         </div>
       </section>
+
+     
     </>
   );
 };
