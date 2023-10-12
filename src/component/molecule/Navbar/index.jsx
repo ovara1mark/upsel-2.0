@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 import menu from "../../../assets/menu.svg";
-import logo from "../../../assets/logo.svg";
+import logo from "../../../assets/logo-2.svg";
 import close from "../../../assets/close.png";
 
 export const Navbar = () => {
@@ -14,7 +14,7 @@ export const Navbar = () => {
           navbar ? "sticky top-0 z-[1000000]" : ""
         } `}
       >
-        <div className="lg:flex lg:justify-start lg:items-center w-[6.5rem] cursor-pointer">
+        <div className="md:flex md:justify-start md:items-center w-[6.5rem] cursor-pointer">
           <Link
             activeClass="active"
             to="/"
