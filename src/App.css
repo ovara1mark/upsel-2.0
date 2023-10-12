@@ -208,7 +208,6 @@ button {
     background-image: url("./assets/more-on-us-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100%;
   }
 }
 
