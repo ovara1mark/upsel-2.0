@@ -343,7 +343,7 @@ export const DetailSection = () => {
             </div>
 
             <div
-              className={`card  mt-[2.55rem] flex gap-3 ${
+              className={`card  mt-[2.55rem] flex gap-3 lg:justify-end ${
                 isItemActive(3) ? "block" : "hidden"
               }`}
             >
