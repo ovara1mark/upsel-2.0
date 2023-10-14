@@ -12,7 +12,7 @@ export const About = () => {
   return (
     <>
       <div className="flex flex-col lg:px-[10.75rem] md:px-[4.4rem] items-center">
-        <div className="w-full">
+        <div className="w-full flex justify-center">
           <img src={about_lg} alt="upsel about" className="object-cover" />
         </div>
         <div className="md:w-[25.2rem] w-[17rem]">
