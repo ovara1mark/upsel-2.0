@@ -13,7 +13,7 @@ export const PreLoader = () => {
     };
 
     // Increment the count every 100ms (adjust the interval as needed)
-    const interval = setInterval(increment, 45);
+    const interval = setInterval(increment, 36);
 
     return () => {
       clearInterval(interval); // Clean up the interval on unmount
