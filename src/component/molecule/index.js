@@ -7,3 +7,4 @@ export * from "./Speciality";
 export * from "./More";
 export * from "./Card";
 export * from "./Choose";
+export * from "./PreLoader";
