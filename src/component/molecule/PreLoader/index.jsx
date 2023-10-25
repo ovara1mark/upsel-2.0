@@ -23,7 +23,7 @@ export const PreLoader = () => {
   return (
     <section className="flex flex-col items-center  bg-upsel-light-black h-[100vh] w-[100%] overflow-x-hidden pt-[18%] ym:pt-[13%] md:pt-[7%]">
       <div className="flex z-auto   overflow-x-hidden preloader-banner h-[3.6rem] w-[105rem]">
-        <Marquee speed={130}>
+        <Marquee speed={180}>
           <div className="whitespace-nowrap banner-two flex justify-center items-center">
             <span className="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
               UX Design
@@ -62,7 +62,7 @@ export const PreLoader = () => {
       </div>
 
       <div className="flex z-auto  overflow-x-hidden preloader-banner h-[3.6rem] w-[105rem]">
-        <Marquee speed={100}>
+        <Marquee speed={130}>
           <div className="whitespace-nowrap banner-two flex justify-center items-center">
             <span className="xl:text-[2rem] font-bold text-[1.25rem] mx-4 pl-6">
               UX Design
