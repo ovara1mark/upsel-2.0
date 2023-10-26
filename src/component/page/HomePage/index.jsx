@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Choose, HeroSection, More, Navbar } from "../../molecule";
+import { Choose, HeroSection, More, Navbar, PreLoader } from "../../molecule";
 import {
   Footer,
   AboutSection,
@@ -8,7 +8,7 @@ import {
   DetailSection,
 } from "../../organism";
 import ReactLoading from "react-loading";
-import purple from "../../../assets/purple-3.gif";
+// import purple from "../../../assets/purple-3.gif";
 
 export const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,15 +17,13 @@ export const HomePage = () => {
     // Simulate loading by using a timeout
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000); // Set the duration as needed
+    }, 4850); // Set the duration as needed
   }, []);
   return (
     <>
       <main className="bg-upsel-black">
         {isLoading ? (
-          <section className="bg-upsel-black w-[100%] h-[100vh] flex justify-center items-center">
-            <img src={purple} alt="preloader" />
-          </section>
+          <PreLoader />
         ) : (
           <>
             <Navbar />
