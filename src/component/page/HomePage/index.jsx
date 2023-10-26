@@ -22,7 +22,7 @@ export const HomePage = () => {
   return (
     <>
       <main className="bg-upsel-black">
-        {/* {isLoading ? (
+        {isLoading ? (
           <PreLoader />
         ) : (
           <>
@@ -36,8 +36,7 @@ export const HomePage = () => {
             <ContactUs />
             <Footer />
           </>
-        )} */}
-        <PreLoader />
+        )}
       </main>
     </>
   );
