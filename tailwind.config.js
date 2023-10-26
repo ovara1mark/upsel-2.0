@@ -59,6 +59,7 @@ export default {
     },
     fontFamily: {
       custom: ["DM Sans", "sans-serif"],
+      customTwo: ["Montserrat", "sans-serif"],
     },
     screens: {
       ym: "500px",
